@@ -1,0 +1,14 @@
+C:\VSTemp\Projects\Yes\Yes\bin\Debug\Yes.exe.config
+C:\VSTemp\Projects\Yes\Yes\bin\Debug\Yes.exe
+C:\VSTemp\Projects\Yes\Yes\bin\Debug\Yes.pdb
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.Form1.resources
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.Properties.Resources.resources
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.csproj.GenerateResource.Cache
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.exe
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.pdb
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.csprojResolveAssemblyReference.cache
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.UserControl1.resources
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.Graphs.resources
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.statistics.resources
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.calendar.resources
+C:\VSTemp\Projects\Yes\Yes\obj\Debug\Yes.samplef.resources
