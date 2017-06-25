@@ -30,39 +30,41 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Data.xlsx");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Data01.xlsx");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Dataset", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Clustering");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Time series plot");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Frequency chart");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Scatter plot ");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Scatter matrix");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Histogram");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Autocorrelation chart");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Correlation with target");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Graphs", new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Statistics");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Interpretations", new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode13});
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Sample");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Forecasts", new System.Windows.Forms.TreeNode[] {
-            treeNode15});
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Data.xlsx");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Data01.xlsx");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Dataset", new System.Windows.Forms.TreeNode[] {
+            treeNode33,
+            treeNode34});
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Clustering");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Time series plot");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Frequency chart");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Scatter plot ");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Scatter matrix");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Histogram");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Autocorrelation chart");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Correlation with target");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Graphs", new System.Windows.Forms.TreeNode[] {
+            treeNode36,
+            treeNode37,
+            treeNode38,
+            treeNode39,
+            treeNode40,
+            treeNode41,
+            treeNode42,
+            treeNode43});
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Statistics");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Interpretations", new System.Windows.Forms.TreeNode[] {
+            treeNode44,
+            treeNode45});
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("Sample");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Forecasts", new System.Windows.Forms.TreeNode[] {
+            treeNode47});
             this.mnuTextFile = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mnuNewFile = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showStatisticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,10 +95,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.mnuTextFile.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -106,7 +110,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnuTextFile
@@ -136,6 +139,20 @@
             this.showStatisticsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.showStatisticsToolStripMenuItem.Text = "Show Statistics";
             this.showStatisticsToolStripMenuItem.Click += new System.EventHandler(this.showStatisticsToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(131, 26);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem1.Text = "Show Item";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // menuStrip1
             // 
@@ -375,54 +392,57 @@
             this.treeView1.HotTracking = true;
             this.treeView1.Location = new System.Drawing.Point(3, -1);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node1";
-            treeNode1.Text = "Data.xlsx";
-            treeNode2.Name = "Node2";
-            treeNode2.Text = "Data01.xlsx";
-            treeNode3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            treeNode3.Name = "Node0";
-            treeNode3.Text = "Dataset";
-            treeNode4.Name = "Node3";
-            treeNode4.Text = "Clustering";
-            treeNode5.Name = "Node5";
-            treeNode5.Text = "Time series plot";
-            treeNode6.Name = "Node14";
-            treeNode6.Text = "Frequency chart";
-            treeNode7.Name = "Node15";
-            treeNode7.Text = "Scatter plot ";
-            treeNode8.Name = "Node16";
-            treeNode8.Text = "Scatter matrix";
-            treeNode9.Name = "Node17";
-            treeNode9.Text = "Histogram";
-            treeNode10.Name = "Node18";
-            treeNode10.Text = "Autocorrelation chart";
-            treeNode11.Name = "Node19";
-            treeNode11.Text = "Correlation with target";
-            treeNode12.ContextMenuStrip = this.mnuTextFile;
-            treeNode12.Name = "Node1";
-            treeNode12.Text = "Graphs";
-            treeNode13.ContextMenuStrip = this.contextMenuStrip1;
-            treeNode13.Name = "Node2";
-            treeNode13.Text = "Statistics";
-            treeNode14.BackColor = System.Drawing.Color.White;
-            treeNode14.ForeColor = System.Drawing.Color.Black;
-            treeNode14.Name = "Node0";
-            treeNode14.Text = "Interpretations";
-            treeNode15.ContextMenuStrip = this.contextMenuStrip2;
-            treeNode15.Name = "Node1";
-            treeNode15.Text = "Sample";
-            treeNode16.Name = "Node0";
-            treeNode16.Text = "Forecasts";
+            treeNode33.Name = "Node1";
+            treeNode33.Text = "Data.xlsx";
+            treeNode34.Name = "Node2";
+            treeNode34.Text = "Data01.xlsx";
+            treeNode35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            treeNode35.Name = "Node0";
+            treeNode35.Text = "Dataset";
+            treeNode36.Name = "Node3";
+            treeNode36.Text = "Clustering";
+            treeNode37.Name = "Node5";
+            treeNode37.Text = "Time series plot";
+            treeNode38.Name = "Node14";
+            treeNode38.Text = "Frequency chart";
+            treeNode39.Name = "Node15";
+            treeNode39.Text = "Scatter plot ";
+            treeNode40.Name = "Node16";
+            treeNode40.Text = "Scatter matrix";
+            treeNode41.Name = "Node17";
+            treeNode41.Text = "Histogram";
+            treeNode42.Name = "Node18";
+            treeNode42.Text = "Autocorrelation chart";
+            treeNode43.Name = "Node19";
+            treeNode43.Text = "Correlation with target";
+            treeNode44.ContextMenuStrip = this.mnuTextFile;
+            treeNode44.Name = "Node1";
+            treeNode44.Text = "Graphs";
+            treeNode45.ContextMenuStrip = this.contextMenuStrip1;
+            treeNode45.Name = "Node2";
+            treeNode45.Text = "Statistics";
+            treeNode46.BackColor = System.Drawing.Color.White;
+            treeNode46.ForeColor = System.Drawing.Color.Black;
+            treeNode46.Name = "Node0";
+            treeNode46.Text = "Interpretations";
+            treeNode47.ContextMenuStrip = this.contextMenuStrip2;
+            treeNode47.Name = "Node1";
+            treeNode47.Text = "Sample";
+            treeNode48.Name = "Node0";
+            treeNode48.Text = "Forecasts";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode14,
-            treeNode16});
+            treeNode35,
+            treeNode46,
+            treeNode48});
             this.treeView1.Size = new System.Drawing.Size(224, 279);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.treeView1);
             this.panel1.ForeColor = System.Drawing.SystemColors.Control;
             this.panel1.Location = new System.Drawing.Point(0, 72);
@@ -430,19 +450,38 @@
             this.panel1.Size = new System.Drawing.Size(228, 628);
             this.panel1.TabIndex = 1;
             // 
-            // contextMenuStrip2
+            // button1
             // 
-            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(131, 26);
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(12, 355);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Show Graphs";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // toolStripMenuItem1
+            // button2
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
-            this.toolStripMenuItem1.Text = "Show Item";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(12, 384);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Show Statistics";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.Location = new System.Drawing.Point(12, 413);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(142, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Show Forecast";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -460,6 +499,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.mnuTextFile.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -472,7 +512,6 @@
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -516,6 +555,9 @@
         private System.Windows.Forms.ToolStripMenuItem xLSFileToolStripMenuItem1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

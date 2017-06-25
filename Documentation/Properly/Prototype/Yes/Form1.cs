@@ -87,5 +87,23 @@ namespace Yes
             samplef smplef = new samplef();
             smplef.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Graphs graphs = new Graphs();
+            graphs.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            statistics frm1 = new statistics();
+            frm1.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            samplef smplef = new samplef();
+            smplef.ShowDialog();
+        }
     }
 }
