@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Samantha Karin Munar
 Justin A. Parado
+=======
+Samantha Karin R. Munar
+>>>>>>> c30d110c2db44e91106d0fd52aa1e79ca5bf170b
