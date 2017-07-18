@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ProjectsViewInfo>
-	<DiagramOpenInfos>
+	<DiagramOpenInfos activeDiagramId="AfUmKrqGAqBwAQyS">
 		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="wcnZcrqGAqHGARDX" maximized="true" offsetX="0" offsetY="0"/>
 		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="3eTjKrqGAqBwARlt" maximized="true" offsetX="0" offsetY="0"/>
 		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="Sh9jKrqGAqBwARku" maximized="true" offsetX="0" offsetY="0"/>
 		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="3Wo7KrqGAqBwAQYo" maximized="true" offsetX="0" offsetY="0"/>
 		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="IiNjKrqGAqBwARjt" maximized="true" offsetX="0" offsetY="0"/>
-		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="AfUmKrqGAqBwAQyS" maximized="true" offsetX="0" offsetY="0"/>
+		<Info bounds="Re:0.0,0.0,1364.0,573.0" diagramId="AfUmKrqGAqBwAQyS" maximized="true" offsetX="0" offsetY="0"/>
+		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="QUXLarqFS_lSpQrb" maximized="true" offsetX="0" offsetY="0"/>
+		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="M0XLarqFS_lSpQsh" maximized="true" offsetX="0" offsetY="0"/>
+		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="oMXLarqFS_lSpQt3" maximized="true" offsetX="0" offsetY="0"/>
+		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="JMXLarqFS_lSpQup" maximized="true" offsetX="0" offsetY="0"/>
+		<Info bounds="Re:0.0,0.0,0.0,0.0" diagramId="HMXLarqFS_lSpQvV" maximized="true" offsetX="0" offsetY="0"/>
 	</DiagramOpenInfos>
 	<DiagramLastActivated>
-		<Diagram id="AfUmKrqGAqBwAQyS" time="1500368612445"/>
+		<Diagram id="AfUmKrqGAqBwAQyS" time="1500400501622"/>
+		<Diagram id="HMXLarqFS_lSpQvV" time="1500400501591"/>
+		<Diagram id="JMXLarqFS_lSpQup" time="1500400470481"/>
+		<Diagram id="oMXLarqFS_lSpQt3" time="1500400397711"/>
+		<Diagram id="M0XLarqFS_lSpQsh" time="1500400361318"/>
+		<Diagram id="QUXLarqFS_lSpQrb" time="1500400330563"/>
 		<Diagram id="IiNjKrqGAqBwARjt" time="1500368609820"/>
 		<Diagram id="3Wo7KrqGAqBwAQYo" time="1500368606823"/>
 		<Diagram id="Sh9jKrqGAqBwARku" time="1500368604177"/>
