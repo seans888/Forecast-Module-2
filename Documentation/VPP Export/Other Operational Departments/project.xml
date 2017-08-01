@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Author="buzon" CommentTableSortAscending="false" CommentTableSortColumn="Date Time" Description="&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;style type=&quot;text/css&quot;&gt;&#10;      &lt;!--&#10;        body { color: #000000; font-family: Dialog; font-size: 12px }&#10;      --&gt;&#10;    &lt;/style&gt;&#13;&#10;    &#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;" DocumentationType="html" ExportedFromDifferentName="false" ExporterVersion="12.2" Name="OOD" TextualAnalysisHighlightOptionCaseSensitive="false" UmlVersion="2.x" Xml_structure="simple">
+	<ProjectInfo>
+		<OrmInfo DefaultDatabase="1" SupportDatabases="0"/>
+		<LogicalView/>
+		<ProjectOptions>
+			<DiagramOptions ActivityDiagramControlFlowDisplayOption="\u0000" ActivityDiagramShowActionCallBehaviorOption="\u0000" ActivityDiagramShowActivityEdgeWeight="true" ActivityDiagramShowObjectNodeType="true" ActivityDiagramShowPartitionHandle="\u0000" AddDataStoresExtEntitiesToDecomposedDFD="\u0002" AlignColumnProperties="true" AllowConfigShowInOutFlowButtonsInDataFlowDiagram="false" AutoGenerateRoleName="false" AutoSetAttributeType="true" AutoSetColumnType="true" AutoSyncRoleName="true" BpdAutoStretchPools="true" BpdConnectGatewayWithFlowObjectInDifferentPool="\u0000" BpdDefaultConnectionPointStyle="\u0001" BpdDefaultConnectorStyle="\u0005" BpdDhowIdOption="\u0000" BpdShowActivitiesTypeIcon="true" BusinessProcessDiagramDefaultLanguage="English" ClassVisibilityStyle="\u0001" ConnectorLabelOrientation="\u0000" CreateOneMessagePerDirection="true" DecisionMergeNodeConnectionPointStyle="\u0000" DefaultAssociationEndNavigable="\u0001" DefaultAssociationEndVisibility="\u0000" DefaultAssociationShowFromMultiplicity="true" DefaultAssociationShowFromRoleName="true" DefaultAssociationShowFromRoleVisibility="true" DefaultAssociationShowStereotypes="true" DefaultAssociationShowToMultiplicity="true" DefaultAssociationShowToRoleName="true" DefaultAssociationShowToRoleVisibility="true" DefaultAttributeMultiplicity="false" DefaultAttributeType="" DefaultAttributeVisibility="\u0001" DefaultClassAttributeMultiplicity="" DefaultClassAttributeMultiplicityOrdered="false" DefaultClassAttributeMultiplicityUnique="true" DefaultClassInterfaceBall="false" DefaultClassVisibility="\u0004" DefaultColumnType="integer(10)" DefaultConnectionPointStyle="\u0000" DefaultConnectorStyle="\u0001" DefaultDiagramBackground="rgb(255, 255, 255)" DefaultDisplayAsRobustnessAnalysisIcon="true" DefaultDisplayAsRobustnessAnalysisIconInSequenceDiagram="true" DefaultDisplayAsStereotypeIcon="false" DefaultFontColor="rgb(0, 0, 0)" DefaultGenDiagramTypeFromScenario="\u0000" DefaultHtmlDocFontColor="rgb(0, 0, 0)" DefaultLineJumps="\u0000" DefaultOperationVisibility="\u0004" DefaultParameterDirection="\u0002" DefaultShowAttributeInitialValue="true" DefaultShowAttributeOption="\u0001" DefaultShowClassMemberStereotype="true" DefaultShowDirection="false" DefaultShowMultiplicityConstraints="false" DefaultShowOperationOption="\u0001" DefaultShowOperationSignature="true" DefaultShowOrderedMultiplicityConstraint="true" DefaultShowOwnedAssociationEndAsAttribute="true" DefaultShowOwner="false" DefaultShowOwnerSkipModelInFullyQualifiedOwnerSignature="true" DefaultShowTemplateParameter="true" DefaultShowTypeOption="\u0001" DefaultShowUniqueMultiplicityConstraint="true" DefaultTypeOfSubProcess="\u0000" DefaultWrapClassMember="false" DrawTextAnnotationOpenRectangleFollowConnectorEnd="true" EnableMinimumSize="true" EntityColumnConstraintsPresentation="\u0002" ErdIndexNumOfDigits="-1" ErdIndexPattern="{table_name}" ErdIndexPatternSyncAutomatically="true" ErdManyToManyJoinTableDelimiter="_" ExpandedSubProcessDiagramContent="\u0001" ForeignKeyArrowHeadSize="\u0002" ForeignKeyConnectorEndPointAssociatedColumn="false" ForeignKeyNamePattern="{reference_table_name}{reference_column_name}" ForeignKeyNamePatternCaseHandling="0" ForeignKeyRelationshipPattern="{association_name}" FractionalMetrics="true" GeneralizationSetNotation="\u0001" GraphicAntiAliasing="true" GridDiagramFontSize="14" LineJumpSize="\u0000" ModelElementNameAlignment="\u0004" MultipleLineClassName="\u0001" PaintConnectorThroughLabel="false" PointConnectorEndToCompartmentMember="true" PrimaryKeyConstraintPattern="" PrimaryKeyNamePattern="ID" RenameConstructorAfterRenameClass="\u0000" RenameExtensionPointToFollowExtendUseCase="\u0000" ShapeAutoFitSize="false" ShowActivationsInSequenceDiagram="true" ShowActivityStateNodeCaption="65535" ShowArtifactOption="\u0002" ShowAssociatedDiagramNameOfInteraction="false" ShowAssociationRoleStereotypes="true" ShowAttributeGetterSetter="false" ShowClassEmptyCompartments="false" ShowColumnNullable="true" ShowColumnType="true" ShowColumnUniqueConstraintName="false" ShowComponentOption="\u0002" ShowExtraColumnProperties="true" ShowInOutFlowButtonsInDataFlowDiagram="false" ShowInOutFlowsInSubLevelDiagram="true" ShowMessageOperationSignatureForSequenceAndCommunicationDiagram="true" ShowMessageStereotypeInSequenceAndCommunicationDiagram="true" ShowNumberInCollaborationDiagram="true" ShowNumberInSequenceDiagram="true" ShowPackageNameStyle="\u0000" ShowParameterNameInOperationSignature="true" ShowRowGridLineWithinCompClassDiagram="false" ShowRowGridLineWithinCompERD="true" ShowRowGridLineWithinORMDiagram="true" ShowSchemaNameInERD="true" ShowTransitionTrigger="\u0000" ShowUseCaseExtensionPoint="true" ShowUseCaseID="false" StateShowPrePostConditionAndBodyOfInternalActivities="true" StopTargetLifelineOnCreateDestroyMessage="\u0002" SupportHtmlTaggedValue="false" SupportMultipleLineAttribute="true" SuppressImpliedMultiplicityForAttributeAssociationEnd="false" SyncAssociationNameWithAssociationClass="\u0000" SyncAssociationRoleNameWithReferencedAttributeName="true" SyncDocOfInterfaceToSubClass="\u0000" TextAntiAliasing="true" TextualAnalysisGenerateRequirementTextOption="\u0001" TextualAnalysisHighlightOption="\u0000" UnnamedIndexPattern="{table_name}_{column_name}" UseStateNameTab="false">
+				<DefaultHtmlDocFont Family="Dialog" Size="12" Style="0"/>
+			</DiagramOptions>
+			<GeneralOptions ConfirmSubLevelIdWithDot="true"/>
+			<InstantReverseOptions CalculateGeneralizationAndRealization="false" CreateShapeForParentModelOfDraggedClassPackage="false" ReverseGetterSetter="\u0000" ReverseOperationImplementation="false" ShowPackageForNewDiagram="\u0001" ShowPackageOwner="\u0000"/>
+			<ModelQualityOptions EnableModelQualityChecking="false"/>
+			<ORMOptions DecimalPrecision="19" DecimalScale="0" ExportCommentToDatabase="true" FormattedSQL="false" GenerateAssociationWithAttribute="false" GenerateDiagramFromORMWizards="true" GetterSetterVisibility="\u0000" IdGeneratorType="native" MappingFileColumnOrder="\u0000" NumericToClassType="\u0000" QuoteSQLIdentifier="\u0000" RecreateShapeWhenSync="false" SyncToClassDiagramAttributeName="\u0001" SyncToClassDiagramAttributeNamePrefix="" SyncToClassDiagramAttributeNameSuffix="" SyncToClassDiagramClassName="\u0000" SyncToClassDiagramClassNamePrefix="" SyncToClassDiagramClassNameSuffix="" SyncToERDColumnName="\u0000" SyncToERDColumnNamePrefix="" SyncToERDColumnNameSuffix="" SyncToERDTableName="\u0004" SyncToERDTableNamePrefix="" SyncToERDTableNameSuffix="" SynchronizeDefaultValueToColumn="false" SynchronizeName="\u0002" TablePerSubclassFKMapping="\u0000" UpperCaseSQL="true" UseDefaultDecimal="true" WrappingServletRequest="\u0001"/>
+			<RequirementDiagramOptions DefaultWrapMember="false" ShowAttributes="\u0001" SupportHTMLAttribute="false"/>
+			<StateCodeEngineOptions AutoCreateInitialStateInStateDiagram="true" AutoCreateTransitionMethods="true" DefaultInitialStateLocationX="-1" DefaultInitialStateLocationY="-1" GenerateDebugMessage="false" GenerateSample="true" GenerateTryCatch="true" Language="\u0000" RegenerateTransitionMethods="false" SyncTransitionMethods="true"/>
+			<WarningOptions CreateORMClassInDefaultPackage="true"/>
+			<PORepository>
+				<POUserIDFormats>
+					<POUserIDFormat Digits="2" Guid="false" Id="lCwxObqGAqBwAQqr" LastNumericValue="0" ModelType="BPMNElement" Prefix="BP" Suffix=""/>
+					<POUserIDFormat Digits="2" Guid="false" Id="lCwxObqGAqBwAQqs" LastNumericValue="0" ModelType="Actor" Prefix="AC" Suffix=""/>
+					<POUserIDFormat Digits="2" Guid="false" Id="lCwxObqGAqBwAQqt" LastNumericValue="0" ModelType="UseCase" Prefix="UC" Suffix=""/>
+					<POUserIDFormat Digits="3" Guid="false" Id="lCwxObqGAqBwAQqu" LastNumericValue="0" ModelType="Requirement" Prefix="REQ" Suffix=""/>
+					<POUserIDFormat Digits="3" Guid="false" Id="lCwxObqGAqBwAQqv" LastNumericValue="0" ModelType="BusinessRule" Prefix="BR" Suffix=""/>
+					<POUserIDFormat Digits="-1" Guid="false" Id="lCwxObqGAqBwAQqw" LastNumericValue="0" ModelType="BusinessProcessDiagram" Prefix="" Suffix=""/>
+				</POUserIDFormats>
+			</PORepository>
+		</ProjectOptions>
+	</ProjectInfo>
+	<Models>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="4vQxObqGAqBwAQc6" Name="boolean" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.143" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQc7" Name="byte" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQc8" Name="char" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQc9" Name="double" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQc." Name="float" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQc_" Name="int" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQdA" Name="long" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQdB" Name="short" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQdC" Name="void" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="avQxObqGAqBwAQdD" Name="string" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:46:59.158" PmLastModified="2017-08-01T14:46:59.158" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="GwoxObqGAqBwAQq." Name="Other Operating Departments' Revenue" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:47:07.736" PmLastModified="2017-08-01T14:53:19.053" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<ModelChildren>
+				<DBColumn BacklogActivityId="0" Documentation_plain="" Generated="Unspecified" Id="wCFxObqGAqBwAQrT" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="ood_id" Nullable="true" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:49:31.907" PmLastModified="2017-08-01T14:53:19.053" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn BacklogActivityId="0" Documentation_plain="" Generated="Unspecified" Id="l.lxObqGAqBwAQrW" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="ood_name" Nullable="true" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:49:37.001" PmLastModified="2017-08-01T14:53:19.053" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn BacklogActivityId="0" Documentation_plain="" Generated="Unspecified" Id="L7fJObqGAqBwAQs4" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="ood_type" Nullable="true" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:55:26.708" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+			</ModelChildren>
+			<MasterView>
+				<DBTable Idref="KwoxObqGAqBwAQq9" Name="Other Operating Departments' Revenue"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="xTNpObqGAqBwAQuE" Name="Business Center" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:58:34.787" PmLastModified="2017-08-01T14:58:42.766" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<MasterView>
+				<DBTable Idref="xTNpObqGAqBwAQuD" Name="Business Center"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="OMLpObqGAqBwAQub" Name="Telephone" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:59:05.116" PmLastModified="2017-08-01T14:59:09.726" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<MasterView>
+				<DBTable Idref="OMLpObqGAqBwAQua" Name="Telephone"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="zXrpObqGAqBwAQuq" Name="Transportation" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:59:12.179" PmLastModified="2017-08-01T14:59:44.603" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<MasterView>
+				<DBTable Idref="zXrpObqGAqBwAQup" Name="Transportation"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="xF3pObqGAqBwAQu6" Name="Laundry/Pressing" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:59:35.587" PmLastModified="2017-08-01T14:59:53.795" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<MasterView>
+				<DBTable Idref="xF3pObqGAqBwAQu5" Name="Laundry/Pressing"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="LiPpObqGAqBwAQvF" Name="Gift Shoppe" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:59:38.228" PmLastModified="2017-08-01T15:00:13.733" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<MasterView>
+				<DBTable Idref="LiPpObqGAqBwAQvE" Name="Gift Shoppe"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="ltWZObqGAqBwAQwH" Name="Spa/Message" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T15:01:42.889" PmLastModified="2017-08-01T15:02:24.223" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<MasterView>
+				<DBTable Idref="ltWZObqGAqBwAQwG" Name="Spa/Message"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="dSpZObqGAqBwAQw8" Name="Parking" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T15:02:26.222" PmLastModified="2017-08-01T15:02:34.732" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<MasterView>
+				<DBTable Idref="tSpZObqGAqBwAQw7" Name="Parking"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" DataModel="Physical" Documentation_plain="" Id="oWs5ObqGAqBwAQxW" Name="Revenues" OrmSyncState="Not Sync" PmAuthor="buzon" PmCreateDateTime="2017-08-01T15:05:10.533" PmLastModified="2017-08-01T15:10:21.551" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0">
+			<ModelChildren>
+				<DBColumn BacklogActivityId="0" Documentation_plain="" Generated="Unspecified" Id="5Vl5ObqGAqBwAQyv" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="today" Nullable="true" PmAuthor="buzon" PmCreateDateTime="2017-08-01T15:07:06.279" PmLastModified="2017-08-01T15:10:21.551" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="double" Type_internalValue="6" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn BacklogActivityId="0" Documentation_plain="" Generated="Unspecified" Id="2B15ObqGAqBwAQyy" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="mtd" Nullable="true" PmAuthor="buzon" PmCreateDateTime="2017-08-01T15:07:13.819" PmLastModified="2017-08-01T15:10:21.551" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="double" Type_internalValue="6" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn BacklogActivityId="0" Documentation_plain="" Generated="Unspecified" Id="NGMFObqGAqBwAQzR" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="mtdlastyr" Nullable="true" PmAuthor="buzon" PmCreateDateTime="2017-08-01T15:09:28.492" PmLastModified="2017-08-01T15:10:21.551" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="double" Type_internalValue="6" Unique="false" UserIDLastNumericValue="0"/>
+			</ModelChildren>
+			<MasterView>
+				<DBTable Idref="oWs5ObqGAqBwAQxV" Name="Revenues"/>
+			</MasterView>
+		</DBTable>
+	</Models>
+	<Diagrams>
+		<ERDiagram AlignToGrid="false" AutoFitShapesSize="false" ConnectionPointStyle="0" ConnectorLabelOrientation="0" ConnectorLineJumps="0" ConnectorLineJumpsSize="0" ConnectorStyle="1" DataModel="2" DiagramBackground="rgb(255, 255, 255)" Editable="true" FollowDiagramParentElement="true" ForeignKeyArrowHeadSize="3" GridColor="rgb(192, 192, 192)" GridHeight="10" GridVisible="false" GridWidth="10" Height="588" HideEmptyTaggedValues="false" Id="ptwxObqGAqBwAQqx" ImageHeight="0" ImageScale="1.0" ImageWidth="0" InitializeDiagramForCreate="true" Maximized="true" ModelElementNameAlignment="4" Name="OOD" PaintConnectorThroughLabel="1" PmAuthor="buzon" PmCreateDateTime="2017-08-01T14:47:02.245" PmLastModified="2017-08-01T15:12:52.015" PointConnectorEndToCompartmentMember="true" QualityScore="-1" RequestValidateSnapToGrid="false" ShapePresentationOption="0" ShowActivityStateNodeCaption="65535" ShowAllocatedFrom="true" ShowAllocatedTo="true" ShowConnectorName="0" ShowConstraints="false" ShowDefaultPackage="false" ShowInformationItemOption="2" ShowLegend="false" ShowPMAuthor="false" ShowPMDifficulty="false" ShowPMDiscipline="false" ShowPMIteration="false" ShowPMPhase="false" ShowPMPriority="false" ShowPMStatus="false" ShowPMVersion="false" ShowPackageNameStyle="0" ShowSchemaName="true" ShowShapeStereotypeIconName="true" ShowStereotypes="true" ShowTaggedValues="false" TeamworkCreateDateTime="0" TrimmedHeight="0" TrimmedWidth="0" Width="679" X="0" Y="0" ZoomRatio="1.0" _alignColumnProperties="true" _columnConstraintsDisplayOption="2" _globalPaletteOption="true" _pointForeignKeyEndToColumn="false" _showColumnStereotypes="true" _showColumnTypes="true" _showColumnUserType="false" _showDBTableColumnsMode="1" _showDBViewColumnsMode="1" _showExtraColumnProperties="true" _showProcedureStereotypes="true" _showStoredProcedureResultSetColumns="true" _showStoredProcedures="true" _showTriggerStereotypes="true" _showTriggers="true">
+			<Shapes>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="82" Id="KwoxObqGAqBwAQq9" MetaModelElement="GwoxObqGAqBwAQq." Model="GwoxObqGAqBwAQq." ModelElementNameAlignment="9" Name="Other Operating Departments' Revenue" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="243" X="17" Y="63" ZOrder="18">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="243" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="48" Id="xTNpObqGAqBwAQuD" MetaModelElement="xTNpObqGAqBwAQuE" Model="xTNpObqGAqBwAQuE" ModelElementNameAlignment="9" Name="Business Center" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="70" X="128" Y="437" ZOrder="16">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="70" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="40" Id="OMLpObqGAqBwAQua" MetaModelElement="OMLpObqGAqBwAQub" Model="OMLpObqGAqBwAQub" ModelElementNameAlignment="9" Name="Telephone" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="70" X="198" Y="445" ZOrder="14">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="70" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="40" Id="zXrpObqGAqBwAQup" MetaModelElement="zXrpObqGAqBwAQuq" Model="zXrpObqGAqBwAQuq" ModelElementNameAlignment="9" Name="Transportation" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="70" X="268" Y="445" ZOrder="12">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="70" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="40" Id="xF3pObqGAqBwAQu5" MetaModelElement="xF3pObqGAqBwAQu6" Model="xF3pObqGAqBwAQu6" ModelElementNameAlignment="9" Name="Laundry/Pressing" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="70" X="128" Y="485" ZOrder="10">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="70" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="40" Id="LiPpObqGAqBwAQvE" MetaModelElement="LiPpObqGAqBwAQvF" Model="LiPpObqGAqBwAQvF" ModelElementNameAlignment="9" Name="Gift Shoppe" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="70" X="198" Y="485" ZOrder="8">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="70" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="40" Id="ltWZObqGAqBwAQwG" MetaModelElement="ltWZObqGAqBwAQwH" Model="ltWZObqGAqBwAQwH" ModelElementNameAlignment="9" Name="Spa/Message" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="70" X="268" Y="485" ZOrder="6">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="70" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="40" Id="tSpZObqGAqBwAQw7" MetaModelElement="dSpZObqGAqBwAQw8" Model="dSpZObqGAqBwAQw8" ModelElementNameAlignment="9" Name="Parking" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="70" X="198" Y="405" ZOrder="4">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="70" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="91" Id="oWs5ObqGAqBwAQxV" MetaModelElement="oWs5ObqGAqBwAQxW" Model="oWs5ObqGAqBwAQxW" ModelElementNameAlignment="9" Name="Revenues" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="170" X="28" Y="222" ZOrder="2">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="170" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+			</Shapes>
+		</ERDiagram>
+	</Diagrams>
+</Project>
