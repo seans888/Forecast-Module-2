@@ -1,5 +1,0 @@
-We are taking import files to system and forecasting itself as a different process.
-
-That is to say, importing is not necessary for forecasting to occur. Conversely, the user can import files without the need to forecast it immediately.
-
-Is that how it's supposed to be?
