@@ -1,9 +1,9 @@
 <?php
-    class Import extends CI_Controller{
+    class Projects extends CI_Controller{
         public function index(){
             $this->load->view('templates/header');
             $this->load->view('modules/menu');
-            $this->load->view('projects/importfile');
+            $this->load->view('projects/menu');
             $this->load->view('scripts/home');
             $this->load->view('templates/footer');
         }

@@ -7,14 +7,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo base_url();?>">JUSTIN'S LEAGUE</a>
+        <a class="navbar-brand" href="<?php echo base_url();?>home">JUSTIN'S LEAGUE</a>
     </div>
 
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
-                    <a href="<?php echo base_url(); ?>import/index"><i class="fa fa-plus-square fa-fw"></i>Start a project</a>
+                    <a href="#"><i class="fa fa-plus-square fa-fw"></i>Create a project</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-th-list"></i> Projects<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo base_url(); ?>projects/index"><i class="fa fa-folder-o"></i> Revenue Project</a>
+
+                        </li>
+
+                    </ul>
                 </li>
 
             </ul>
