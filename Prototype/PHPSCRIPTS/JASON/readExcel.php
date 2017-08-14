@@ -23,132 +23,6 @@ echo $multiplicand." * ".$multiplier." = ".$product;*/
 
 $group = array(12);
 
-
-
-/*$individual = array
-(
-    $jan = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $feb = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $mar = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $apr = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $may = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $jun = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $jul = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $aug = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $sep = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $oct = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $nov = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-    $dec = array(
-        $rack = array(3),
-        $corp = array(3),
-        $corpOth = array(3),
-        $pack = array(3),
-        $wholeOn = array(3),
-        $wholeOff = array(3),
-        $indOth = array(3),
-        $industry = array(3),
-    ),
-);*/
-
 $individual = array
 (
     $rack = array(
@@ -344,6 +218,7 @@ $row=7;
 $col=3;
 for($ss=0;$ss<count($individual);$ss++){
     for($m=0;$m<count($individual[0]);$m++){
+		echo "[".$row."]"."[".$col."] month#: ".$m." subsegment#: ".$ss."<br/>";
         $individual[$ss][$m][0] = $excel_arr[$row][$col];
         $individual[$ss][$m][1] = $excel_arr[$row][$col+1];
         $individual[$ss][$m][2] = $excel_arr[$row][$col+2];
@@ -351,6 +226,7 @@ for($ss=0;$ss<count($individual);$ss++){
     }
     $row=7;
     $col+=3;
+	echo $col."<br/>";
 }
 
 echo '<pre>'; print_r($individual); echo '</pre>';
