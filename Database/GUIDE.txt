@@ -1,0 +1,12 @@
+REVENUE-FORECASTING-SYSTEM.mwb
+ - open this with mysql workbench to view the database structure (ERD)
+RFSA-DUMP.SQL
+ - import this into your phpmyadmin host to get a database with provided entries for some of the tables
+RFSA-DDL.sql
+ - merely an sql file containing INSERT statements. Not really useful that much except for a backup
+RFSA-empty-db
+ - import this file in phpmyadmin with a database name of rfsa to get an empty set of tables
+
+REMEMBER
+-whenever you import using any of these files, create a database named 'rfsa' first and import into
+there
