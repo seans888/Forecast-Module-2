@@ -1,7 +1,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Revenue Project <button class="btn btn-info btn-lg"><i class="fa fa-check"></i></button> <button type="button" class="btn btn-warning btn-lg"><i class="fa fa-times"></i></button></h1>
+            <h1 class="page-header">Revenue Project</h1>
         </div>
 
 
@@ -25,13 +25,14 @@
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="import">
                             <h4>Import File</h4>
-                            <p><?php
-                                echo form_open_multipart('import/import-data');
-                                echo form_upload('file');
-                                echo '<br/>';
-                                echo form_submit(null,'Upload');
-                                echo form_close();
-                                ?></p>
+                            <p>
+                            <?php echo form_open_multipart('projects/import-data');?>
+                            <div class="form-group">
+                            <?php echo form_upload('file');?>
+                            </div>
+                            <?php echo form_submit(null,'Upload'); ?>
+                            <?php echo form_close();?>
+                            </p>
                             </div>
                         <div class="tab-pane fade" id="files">
                             <h4>Files</h4>
@@ -48,37 +49,16 @@
                     </div>
                 </div>
                 <!-- /.panel-body -->
-
+            <!--Flash messages-->
+            <?php if($this->session->flashdata('file_upload')):?>
+                <?php echo '<p class="alert alert-success">'.$this->session->flashdata('file_upload').'</p>';?>
+            <?php endif;?>
+            <?php if($this->session->flashdata('file_no_upload')):?>
+                <?php echo '<p class="alert alert-danger">'.$this->session->flashdata('file_no_upload').'</p>';?>
+            <?php endif;?>
             <!-- /.panel -->
         </div>
 
 
     </div>
-    <div class="row">
-    <div class="col-lg-12">
-<!--
-        <?php
-
-        require(APPPATH.'third_party/PHPExcel-1.8/Classes/PHPExcel.php');
-        $tmpfname=FCPATH."upload/sample.xlsx";
-        $excelReader=PHPExcel_IOFactory::createReaderForFile($tmpfname);
-        $excelObj=$excelReader->load($tmpfname);
-        $worksheet=$excelObj->getActiveSheet();
-        $lastRow=$worksheet->getHighestRow();
-
-        echo "<table>";
-        for ($row=1;$row<= $lastRow;$row++){
-            echo "<tr><td>";
-            echo $worksheet->getCell('A'.$row)->getValue();
-            echo "</td><td>";
-            echo $worksheet->getCell('B'.$row)->getValue();
-            echo "</td><td>";
-            echo $worksheet->getCell('C'.$row)->getValue();
-            echo "</td><tr>";
-        }
-        echo "</table>";
-        ?>
--->
-    </div>
-</div>
 </div>

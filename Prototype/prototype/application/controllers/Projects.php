@@ -12,30 +12,23 @@
 
         }
         public function import_data(){
+                $config = array(
+                    'upload_path' => FCPATH.'upload/',
+                    'allowed_types' => 'xls|xlsx'
+                );
+                $this->load->library('upload', $config);
+                if ($this->upload->do_upload('file')) {
+                    $dummyfile = $this->upload->data();
+                    $file_data=$_FILES['file']['name'];
+                    $this->project_model->upload_file($file_data);
+                    $this->session->set_flashdata('file_upload','File uploaded');
+                    redirect('projects/index');
+                    @chmod($dummyfile['full_path'], 0777);
+                }else{
+                    $this->session->set_flashdata('file_no_upload','No file chosen/wrong format. XLS|XLSX only');
+                    redirect('projects/index');
+                }
 
-
-            $config=array(
-                'upload_path'=>FCPATH.'upload/',
-                'allowed_types'=>'xls|xlsx'
-            );
-            $this->load->library('upload',$config);
-            if ($this->upload->do_upload('file')){
-                $dummyfile=$this->upload->data();
-                @chmod($dummyfile['full_path'],0777);
-
-
-                require(APPPATH.'third_party/PHPExcel-1.8/Classes/PHPExcel.php');
-                $tmpfname=$dummyfile['full_path'];
-                $excelReader=PHPExcel_IOFactory::createReaderForFile($tmpfname);
-                $excelObj=$excelReader->load($tmpfname);
-                $data['worksheet']=$excelObj->getActiveSheet();
-                $data['lastRow']=$data['worksheet']->getHighestRow();
-
-                $this->load->view('templates/header');
-                $this->load->view('modules/menu');
-                $this->load->view('projects/importfile',$data);
-                $this->load->view('scripts/home');
-                $this->load->view('templates/footer');
 
 
 
@@ -64,7 +57,7 @@
                 print_r($data_excel);
                 die();
             */
-            }
+
 
         }
     }
