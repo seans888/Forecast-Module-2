@@ -26,9 +26,86 @@ while($col != 4){
     $col++;
 }
 
-//
+//Corporate
+while($col != 7) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
 
 
+//Corporate Others
+while($col != 10) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Packages/Promo
+while($col != 13) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Wholesale Online
+while($col != 16) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Wholesale Offline
+while($col != 19) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Individual Others
+while($col != 22) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Industry Rate
+while($col != 25) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Packages/Promo
+while($col != 13) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
 
 //Edit Cells for Group
 
