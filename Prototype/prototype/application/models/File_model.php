@@ -11,4 +11,9 @@
             $query=$this->db->get_where('files',array('id'=>$id));
             return $query->row();
         }
+        public function insert_data(){
+            $data=array(
+
+            );
+        }
     }

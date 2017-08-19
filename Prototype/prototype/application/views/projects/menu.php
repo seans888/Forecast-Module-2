@@ -58,10 +58,10 @@
                 <!-- /.panel-body -->
             <!--Flash messages-->
             <?php if($this->session->flashdata('file_upload')):?>
-                <?php echo '<p class="alert alert-success">'.$this->session->flashdata('file_upload').'</p>';?>
+                <?php echo '<div class="alert alert-success">'.$this->session->flashdata('file_upload').'</div>';?>
             <?php endif;?>
             <?php if($this->session->flashdata('file_no_upload')):?>
-                <?php echo '<p class="alert alert-danger">'.$this->session->flashdata('file_no_upload').'</p>';?>
+                <?php echo '<div class="alert alert-danger">'.$this->session->flashdata('file_no_upload').'</div>';?>
             <?php endif;?>
             <!-- /.panel -->
         </div>
