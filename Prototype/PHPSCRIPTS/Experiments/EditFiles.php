@@ -97,8 +97,12 @@ while($col != 25) {
     $col++;
 }
 
-//Packages/Promo
-while($col != 13) {
+//Edit Cells for Group
+$col = 26;
+$value = 60;
+
+//Corporate Meetings
+while($col != 28) {
     $row = 8;
     while ($row != 10) {
         $sheet->setCellValueByColumnAndRow($col, $row, $value);
@@ -107,7 +111,47 @@ while($col != 13) {
     $col++;
 }
 
-//Edit Cells for Group
+//Convention/Association
+while($col != 32) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Gov't/NGOs
+while($col != 35) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Group Tours
+while($col != 38) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+//Group Others
+while($col != 41) {
+    $row = 8;
+    while ($row != 10) {
+        $sheet->setCellValueByColumnAndRow($col, $row, $value);
+        $row++;
+    }
+    $col++;
+}
+
+
 
 
 
