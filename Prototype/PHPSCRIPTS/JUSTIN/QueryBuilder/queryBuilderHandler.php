@@ -70,19 +70,26 @@ $endDate = $endYear ."-" . $endMonth ."-" . $dayMap[$endMonth];
 
 echo "<strong>You chose the following data: </strong>";
 echo "<br/>";
-foreach($desiredDataArray as $desiredData)
+$dataString = "";
+foreach($desiredDataArray as $desiredData) //could be budget_rns actual_rev etc
 {
-    echo $desiredDataMap[$desiredData];
+    $singleDesiredData = $desiredDataMap[$desiredData];
+    echo $singleDesiredData;
+    $dataString = $dataString . "" . $singleDesiredData . ",";
     echo "<br/>";
 }
-
+$dataString = str_replace(",","",$dataString);
 echo "<strong>You chose the following segments: </strong>";
 echo "<br/>";
-foreach($segmentArray as $segment)
+$segmentString = "seg_id in (";
+foreach($segmentArray as $segment)//could be rck, corpo, etc
 {
-    echo $segmentMap[$segment];                     //lists all the segments
+    $singleSegment = $segmentMap[$segment];                     //lists all the segments
+    echo $singleSegment;
+    $segmentString = $segmentString. " " . "'$singleSegment'" . ",";
     echo "<br/>";
 }
+$segmentString = substr($segmentString,0,-1).")";//we remove the ',' and replace it with ')'
 
 //echo "Data desired: " .  $desiredData[0];
 echo "<strong>Table Desired: </strong>" . $table;
@@ -90,7 +97,13 @@ echo "<br/>";
 echo "<strong>Time Period: </strong>" . $startDate . " to " . $endDate;
 echo "<br/>";
 
-$query = "select ".  ?>
+echo $dataString;
+echo "<br>";
+echo $segmentString;
+echo "<br>";
+
+$query = "select " . $dataString . " from " . $table . " where " . $segmentString;
+$result = $conn->query($query); //Result of the query 
 ?>
 
 </body>
