@@ -52,15 +52,37 @@ $dayMap = [
     "NOV" =>"30",
     "DEC" =>"31"
 ];
+$monthMap = [
+        "JAN" => "1",
+    "FEB" => "2",
+    "MAR" => "3",
+    "APR" => "4",
+    "MAY" => "5",
+    "JUN" => "6",
+    "JUL" => "7",
+    "AUG" => "8",
+    "SEPT"=> "9",
+    "OCT" => "10",
+    "NOV" => "11",
+    "DEC" => "12",
+
+    ];
 
 //Get the DATES
 $startYear = $_POST['start-year'];
 $startMonth= $_POST['start-month'];
+
+$startDay = $dayMap[$startMonth];
+$startMonth = $monthMap[$startMonth];
+
 $endYear = $_POST['end-year'];
 $endMonth = $_POST['end-month'];
 
-$startDate = $startYear ."-". $startMonth . "-" . $dayMap[$startMonth];
-$endDate = $endYear ."-" . $endMonth ."-" . $dayMap[$endMonth];
+$endDay = $dayMap[$endMonth];
+$endMonth = $monthMap[$endMonth];
+
+$startDate = $startYear ."-". $startMonth . "-" . $startDay;
+$endDate = $endYear ."-" . $endMonth ."-" . $endDay;
 //END dates
 
 echo "<strong>You chose the following data: </strong>";
