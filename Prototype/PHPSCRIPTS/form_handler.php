@@ -109,7 +109,8 @@ for($ss=0;$ss<8;$ss++)
     }
     else
     {
-        continue;
+        echo $query . " SUCCESS";
+		echo nl2br("\n");
     }
 
 
@@ -135,7 +136,8 @@ for($ss=0;$ss<5;$ss++)
     }
     else
     {
-        continue;
+        echo $query . " SUCCESS";
+		echo nl2br("\n");
     }
 
 
