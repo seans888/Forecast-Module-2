@@ -39,7 +39,7 @@
                             <p><ul class="list-group">
                                 <?php foreach($files as $file):?>
                                     <li class="list-group-item">
-                                        <a href="<?php echo site_url('/categories/posts/'.$category['id']);?>">
+                                        <a href="<?php echo site_url('/files/manipulate/'.$file['id']);?>">
                                             <?php echo $file['file_name'];?></a>
                                     </li>
                                 <?php endforeach;?>
