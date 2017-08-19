@@ -1,8 +1,3 @@
-<html>
-<head>
-    <title>Query Results</title>
-</head>
-<body>
 <?php
 //Connection details
 $host="localhost";
@@ -109,8 +104,6 @@ echo "<br>";*/
 $query = "select " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
 echo "<strong>Query: </strong>";
 echo $query;
-$result = $conn->query($query); //Result of the query
+$result = $conn -> query($query);
 ?>
 
-</body>
-</html>
