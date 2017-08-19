@@ -78,7 +78,7 @@ foreach($desiredDataArray as $desiredData) //could be budget_rns actual_rev etc
     $dataString = $dataString . "" . $singleDesiredData . ",";
     echo "<br/>";
 }
-$dataString = str_replace(",","",$dataString);
+$dataString = substr($dataString,0,-1)."";
 echo "<strong>You chose the following segments: </strong>";
 echo "<br/>";
 $segmentString = "seg_id in (";
@@ -92,18 +92,24 @@ foreach($segmentArray as $segment)//could be rck, corpo, etc
 $segmentString = substr($segmentString,0,-1).")";//we remove the ',' and replace it with ')'
 
 //echo "Data desired: " .  $desiredData[0];
-echo "<strong>Table Desired: </strong>" . $table;
+echo "<strong>Table Desired: </strong>";
 echo "<br/>";
-echo "<strong>Time Period: </strong>" . $startDate . " to " . $endDate;
+echo  $table;
+echo "<br/>";
+echo "<strong>Time Period: </strong>";
+echo "<br/>";
+echo $startDate . " to " . $endDate;
 echo "<br/>";
 
-echo $dataString;
+/*echo $dataString;
 echo "<br>";
 echo $segmentString;
-echo "<br>";
+echo "<br>";*/
 
-$query = "select " . $dataString . " from " . $table . " where " . $segmentString;
-$result = $conn->query($query); //Result of the query 
+$query = "select " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
+echo "<strong>Query: </strong>";
+echo $query;
+$result = $conn->query($query); //Result of the query
 ?>
 
 </body>

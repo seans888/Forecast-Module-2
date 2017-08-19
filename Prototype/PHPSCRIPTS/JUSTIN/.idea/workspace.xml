@@ -26,7 +26,7 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/81689745-a11e-480a-bda9-e99610133911/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="63" lean-forward="false" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+              <caret line="4" column="111" lean-forward="false" selection-start-line="4" selection-start-column="111" selection-end-line="4" selection-end-column="111" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="queryBuilderHandler.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/QueryBuilder/queryBuilderHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="105" column="54" lean-forward="false" selection-start-line="105" selection-start-column="54" selection-end-line="105" selection-end-column="54" />
+            <state relative-caret-position="363">
+              <caret line="108" column="136" lean-forward="false" selection-start-line="108" selection-start-column="136" selection-end-line="108" selection-end-column="136" />
               <folding />
             </state>
           </provider>
@@ -146,12 +146,12 @@
       <option name="presentableId" value="Default" />
       <updated>1503126322642</updated>
       <workItem from="1503126324190" duration="12618000" />
-      <workItem from="1503149656683" duration="5237000" />
+      <workItem from="1503149656683" duration="5798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17855000" />
+    <option name="totallyTimeSpent" value="18416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -223,15 +223,15 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/81689745-a11e-480a-bda9-e99610133911/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="63" lean-forward="false" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+          <caret line="4" column="111" lean-forward="false" selection-start-line="4" selection-start-column="111" selection-end-line="4" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QueryBuilder/queryBuilderHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="105" column="54" lean-forward="false" selection-start-line="105" selection-start-column="54" selection-end-line="105" selection-end-column="54" />
+        <state relative-caret-position="363">
+          <caret line="108" column="136" lean-forward="false" selection-start-line="108" selection-start-column="136" selection-end-line="108" selection-end-column="136" />
           <folding />
         </state>
       </provider>
