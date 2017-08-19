@@ -1,14 +1,18 @@
 <?php
+$fileName = (string)$_POST['file_name'];
 $longYear = $_POST['year'];
 $year = substr($_POST['year'],-2);
 $month = $_POST['month'];
 /*echo  $year;
 echo "<br/>";
 echo $month;*/
+
+echo $fileName;
 $actual_id = $month ."".$year;
 $individual = array('RCK','CORP','CORPO','PKG/PRM','WSOL','WSOF','INDO','INDR');
 $group = array('CORPM','CON/ASSOC','GOV/NGO','GRPT','GRPO');
 /*echo $actual_id;*/
+
 
 $dateFormat =
     [
@@ -67,7 +71,7 @@ $conn = new mysqli($host,$user,$pass,$database);
 
 require_once("PHPExcel-1.8/Classes/PHPExcel.php");
 
-$fileName = "2015 Rooms Segmentation.xlsx";
+/*$fileName = "2015 Rooms Segmentation.xlsx";*/
 $excelReader = PHPExcel_IOFactory::createReaderForFile($fileName);
 $excelObject = $excelReader->load($fileName);
 $workSheet = $excelObject->getActiveSheet();
