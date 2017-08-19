@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="queryBuilderHandler.php" method="post">
+    <table>
+        <tr>
+            <td><strong>Choose Data Set</strong></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="data-set" value="room_actual"/>Actual Data</td>
+            <td><input type="radio" name="data-set" value="room_forecast"/>Forecast Data</td>
+        </tr>
+        <tr>
+            <td><strong>Select Desired Data</strong></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="data-desired[]" value="1"/>Budget - Room Nights Sold</td>
+            <td><input type="checkbox" name="data-desired[]" value="2"/>Budget - Average Room Rate</td>
+            <td><input type="checkbox" name="data-desired[]" value="3"/>Budget - Revenue</td>
+            <td><input type="checkbox" name="data-desired[]" value="4"/>Actual - Room Nights Sold </td>
+            <td><input type="checkbox" name="data-desired[]" value="5"/>Actual - Average Room Rate</td>
+            <td><input type="checkbox" name="data-desired[]" value="6"/>Actual - Revenue</td>
+        </tr>
+        <tr>
+            <td><strong>Select Individual Room Segments</strong></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="segment-desired[]" value="1">Rack</td>
+            <td><input type="checkbox" name="segment-desired[]" value="2">Corporate</td>
+            <td><input type="checkbox" name="segment-desired[]" value="3">Corporate Others</td>
+            <td><input type="checkbox" name="segment-desired[]" value="4">Individual Others</td>
+            <td><input type="checkbox" name="segment-desired[]" value="5">Industry Rate</td>
+            <td><input type="checkbox" name="segment-desired[]" value="6">Package/Promo</td>
+            <td><input type="checkbox" name="segment-desired[]" value="7">Quantity Demanded</td>
+            <td><input type="checkbox" name="segment-desired[]" value="8">Wholesale Online</td>
+            <td><input type="checkbox" name="segment-desired[]" value="9">Wholesale Offline</td>
+        </tr>
+        <tr>
+            <td><strong>Select Group Room Segments</strong></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="segment-desired[]" value="10">Convention/Association</td>
+            <td><input type="checkbox" name="segment-desired[]" value="11">Corporate Meetings</td>
+            <td><input type="checkbox" name="segment-desired[]" value="12">Government/NGO</td>
+            <td><input type="checkbox" name="segment-desired[]" value="13">Group Others</td>
+            <td><input type="checkbox" name="segment-desired[]" value="14">Group Tours</td>
+        </tr>
+        <tr>
+            <td><strong>Start Year</strong></td>
+            <td><input type="text" name="start-year" placeholder="2015" value="2015"></td>
+            <td><strong>Start Month</strong></td>
+            <td>
+                <select name="start-month">
+                    <option value="JAN">January</option>
+                    <option value="FEB">February</option>
+                    <option value="MAR">March</option>
+                    <option value="APR">April</option>
+                    <option value="MAY">May</option>
+                    <option value="JUN">June</option>
+                    <option value="JUL">July</option>
+                    <option value="AUG">August</option>
+                    <option value="SEPT">September</option>
+                    <option value="OCT">October</option>
+                    <option value="NOV">November</option>
+                    <option value="DEC">December</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>End Year</strong></td>
+            <td><input type="text" name="end-year" placeholder="2016" value="2016"></td>
+            <td><strong>End Month</strong></td>
+            <td>
+                <select name="end-month">
+                    <option value="JAN">January</option>
+                    <option value="FEB">February</option>
+                    <option value="MAR">March</option>
+                    <option value="APR">April</option>
+                    <option value="MAY">May</option>
+                    <option value="JUN">June</option>
+                    <option value="JUL">July</option>
+                    <option value="AUG">August</option>
+                    <option value="SEPT">September</option>
+                    <option value="OCT">October</option>
+                    <option value="NOV">November</option>
+                    <option value="DEC">December</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

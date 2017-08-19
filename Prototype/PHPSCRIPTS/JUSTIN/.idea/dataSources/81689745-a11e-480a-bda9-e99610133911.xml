@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="rfsa@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="rfsa">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="ciblog"/>
+    <schema id="4" parent="1" name="cinews"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="phpmyadmin"/>
+    <schema id="9" parent="1" name="test"/>
+    <table id="10" parent="2" name="files"/>
+    <table id="11" parent="2" name="forecast_uses_actual"/>
+    <table id="12" parent="2" name="group_segment_master"/>
+    <table id="13" parent="2" name="individual_segment_master"/>
+    <table id="14" parent="2" name="room_actual"/>
+    <table id="15" parent="2" name="room_forecast"/>
+    <table id="16" parent="2" name="segmentation_list"/>
+    <column id="17" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="10" name="file_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="19" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="11" name="ACTUAL_ID">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="11" name="FORECAST_ID">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="22" parent="11" name="fk_ROOM_ACTUAL_has_ROOM_FORECAST_ROOM_ACTUAL1_idx">
+      <ColNames>ACTUAL_ID</ColNames>
+    </index>
+    <index id="23" parent="11" name="fk_ROOM_ACTUAL_has_ROOM_FORECAST_ROOM_FORECAST1_idx">
+      <ColNames>FORECAST_ID</ColNames>
+    </index>
+    <key id="24" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACTUAL_ID
+FORECAST_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="25" parent="11" name="fk_ROOM_ACTUAL_has_ROOM_FORECAST_ROOM_ACTUAL1">
+      <ColNames>ACTUAL_ID</ColNames>
+      <RefSchemaName>rfsa</RefSchemaName>
+      <RefTableName>room_actual</RefTableName>
+      <RefColNames>ACTUAL_ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="26" parent="11" name="fk_ROOM_ACTUAL_has_ROOM_FORECAST_ROOM_FORECAST1">
+      <ColNames>FORECAST_ID</ColNames>
+      <RefSchemaName>rfsa</RefSchemaName>
+      <RefTableName>room_forecast</RefTableName>
+      <RefColNames>FORECAST_ID</RefColNames>
+    </foreign-key>
+    <column id="27" parent="12" name="GRP_SEG_ID">
+      <Position>1</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="12" name="GRP_SEG_NAME">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="29" parent="12" name="fk_GROUP_SEGMENT_MASTER_SEGMENTATION_LIST1_idx">
+      <ColNames>GRP_SEG_ID</ColNames>
+    </index>
+    <key id="30" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>GRP_SEG_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="31" parent="12" name="fk_GROUP_SEGMENT_MASTER_SEGMENTATION_LIST1">
+      <ColNames>GRP_SEG_ID</ColNames>
+      <RefSchemaName>rfsa</RefSchemaName>
+      <RefTableName>segmentation_list</RefTableName>
+      <RefColNames>SEG_ID</RefColNames>
+    </foreign-key>
+    <column id="32" parent="13" name="IND_SEG_ID">
+      <Position>1</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="13" name="IND_SEG_NAME">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="34" parent="13" name="fk_INDIVIDUAL_SEGMENT_MASTER_SEGMENTATION_LIST_idx">
+      <ColNames>IND_SEG_ID</ColNames>
+    </index>
+    <key id="35" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IND_SEG_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="36" parent="13" name="fk_INDIVIDUAL_SEGMENT_MASTER_SEGMENTATION_LIST">
+      <ColNames>IND_SEG_ID</ColNames>
+      <RefSchemaName>rfsa</RefSchemaName>
+      <RefTableName>segmentation_list</RefTableName>
+      <RefColNames>SEG_ID</RefColNames>
+    </foreign-key>
+    <column id="37" parent="14" name="ACTUAL_ID">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="14" name="SEG_ID">
+      <Position>2</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="14" name="DATE">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="40" parent="14" name="BUDGET_RNS">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="41" parent="14" name="BUDGET_ARR">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="42" parent="14" name="BUDGET_REVENUE">
+      <Position>6</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="43" parent="14" name="ACTUAL_RNS">
+      <Position>7</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="44" parent="14" name="ACTUAL_ARR">
+      <Position>8</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="45" parent="14" name="ACTUAL_REVENUE">
+      <Position>9</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <index id="46" parent="14" name="fk_ROOM_ACTUAL_SEGMENTATION_LIST1_idx">
+      <ColNames>SEG_ID</ColNames>
+    </index>
+    <key id="47" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACTUAL_ID
+SEG_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="48" parent="14" name="fk_ROOM_ACTUAL_SEGMENTATION_LIST1">
+      <ColNames>SEG_ID</ColNames>
+      <RefSchemaName>rfsa</RefSchemaName>
+      <RefTableName>segmentation_list</RefTableName>
+      <RefColNames>SEG_ID</RefColNames>
+    </foreign-key>
+    <column id="49" parent="15" name="FORECAST_ID">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="15" name="SEG_ID">
+      <Position>2</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="15" name="DATE">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="15" name="FORECAST_RNS">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="15" name="FORECAST_ARR">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="15" name="FORECAST_REVENUE">
+      <Position>6</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="55" parent="15" name="fk_ROOM_FORECAST_SEGMENTATION_LIST1_idx">
+      <ColNames>SEG_ID</ColNames>
+    </index>
+    <key id="56" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>FORECAST_ID
+SEG_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="57" parent="15" name="fk_ROOM_FORECAST_SEGMENTATION_LIST1">
+      <ColNames>SEG_ID</ColNames>
+      <RefSchemaName>rfsa</RefSchemaName>
+      <RefTableName>segmentation_list</RefTableName>
+      <RefColNames>SEG_ID</RefColNames>
+    </foreign-key>
+    <column id="58" parent="16" name="SEG_ID">
+      <Position>1</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="16" name="SEG_TYPE">
+      <Position>2</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="60" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SEG_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
