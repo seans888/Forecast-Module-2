@@ -82,14 +82,14 @@
                 ];
             $day = $dateFormat[$month];
             $m = $dateNum[$month];
-
+            /*
             $host = "localhost";
             $user = "root";
             $pass = "";
             $database = "rfsa";
 
             $conn = new mysqli($host, $user, $pass, $database);
-
+               */
             require_once(APPPATH.'third_party/PHPExcel-1.8/Classes/PHPExcel.php');;
 
             /*$fileName = "2015 Rooms Segmentation.xlsx";*/
@@ -122,11 +122,11 @@
                                                          $budgetrns,$budgetarr,$budgetrev,$actualrns,
                                                          $actualarr,$actualrev)";
                 $indcol += 3;
-                if ($conn->query($query) === FALSE) {
+                if ($this->db->query($query) === FALSE) {
                     echo "QUERY FAILED at " . $query;
                     echo "<br/>";
                 } else {
-                    echo $query . " SUCCESS";
+                    echo " ".$query . " SUCCESS";
                     echo nl2br("\n");
                 }
 
@@ -145,11 +145,11 @@
                                                          $budgetrns,$budgetarr,$budgetrev,$actualrns,
                                                          $actualarr,$actualrev)";
                 $grpcol += 3;
-                if ($conn->query($query) === FALSE) {
+                if ($this->db->query($query) === FALSE) {
                     echo "QUERY FAILED at " . $query;
                     echo "<br/>";
                 } else {
-                    echo $query . " SUCCESS";
+                    echo " ".$query . " SUCCESS";
                     echo nl2br("\n");
                 }
             }
