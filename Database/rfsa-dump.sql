@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 19, 2017 at 04:11 AM
+-- Generation Time: Aug 19, 2017 at 08:39 AM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 7.1.7
 
@@ -21,6 +21,17 @@ SET time_zone = "+00:00";
 --
 -- Database: `rfsa`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `files`
+--
+
+CREATE TABLE `files` (
+  `id` int(11) NOT NULL,
+  `file_name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -468,6 +479,12 @@ INSERT INTO `segmentation_list` (`SEG_ID`, `SEG_TYPE`) VALUES
 --
 
 --
+-- Indexes for table `files`
+--
+ALTER TABLE `files`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `forecast_uses_actual`
 --
 ALTER TABLE `forecast_uses_actual`
@@ -509,6 +526,15 @@ ALTER TABLE `room_forecast`
 ALTER TABLE `segmentation_list`
   ADD PRIMARY KEY (`SEG_ID`);
 
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `files`
+--
+ALTER TABLE `files`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Constraints for dumped tables
 --
