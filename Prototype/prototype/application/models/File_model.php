@@ -17,7 +17,11 @@
             $query = $this->db->get_where('files', array('id' => $id));
             return $query->row();
         }
-
+        public function delete_file($id){
+            $this->db->where('id',$id);
+            $this->db->delete('files');
+            return true;
+        }
         public function insert_data()
         {
             $fileName = FCPATH.'upload/'.(string)$_POST['file_name'];

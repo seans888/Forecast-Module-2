@@ -11,7 +11,7 @@
                 <div class="panel-body">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#import" data-toggle="tab">Import File</a>
+                        <li class="active"><a href="#import" data-toggle="tab">Upload File</a>
                         </li>
                         <li><a href="#files" data-toggle="tab">Files</a>
                         </li>
@@ -24,7 +24,7 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="import">
-                            <h4>Import File</h4>
+                            <h4>Upload File</h4>
                             <p>
                             <?php echo form_open_multipart('projects/import-data');?>
                             <div class="form-group">
@@ -39,8 +39,10 @@
                             <p><ul class="list-group">
                                 <?php foreach($files as $file):?>
                                     <li class="list-group-item">
-                                        <a href="<?php echo site_url('/files/manipulate/'.$file['id']);?>">
-                                            <?php echo $file['file_name'];?></a>
+                                        <?php echo form_open('/files/delete/'.$file['id']);?>
+                                        <?php echo $file['file_name'];?>
+                                        <input type="submit" value="Delete" class="btn btn-danger pull-right">
+                                        </form>
                                     </li>
                                 <?php endforeach;?>
                             </ul></p>

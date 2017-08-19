@@ -19,9 +19,10 @@
             $this->load->view('templates/footer');
         }
         public function insert(){
-
             $this->file_model->insert_data();
-
-
+        }
+        public function delete($id){
+            $this->file_model->delete_file($id);
+            redirect('projects');
         }
     }
