@@ -15,7 +15,7 @@
                         </li>
                         <li><a href="#files" data-toggle="tab">Files</a>
                         </li>
-                        <li><a href="#messages" data-toggle="tab">N/A</a>
+                        <li><a href="#insert" data-toggle="tab">Insert to DB</a>
                         </li>
                         <li><a href="#settings" data-toggle="tab">N/A</a>
                         </li>
@@ -45,9 +45,43 @@
                                 <?php endforeach;?>
                             </ul></p>
                         </div>
-                        <div class="tab-pane fade" id="messages">
-                            <h4>Messages Tab</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="tab-pane fade" id="insert">
+                            <h4><?=$title2?></h4>
+                            <p>
+                                <?php echo form_open('files/insert');?>
+                            <div class="form-group">
+                                <label>Month</label>
+                                <select name="month" class="form-control">
+                                    <option value="JAN">January</option>
+                                    <option value="FEB">February</option>
+                                    <option value="MAR">March</option>
+                                    <option value="APR">April</option>
+                                    <option value="MAY">May</option>
+                                    <option value="JUN">June</option>
+                                    <option value="JUL">July</option>
+                                    <option value="AUG">August</option>
+                                    <option value="SEPT">September</option>
+                                    <option value="OCT">October</option>
+                                    <option value="NOV">November</option>
+                                    <option value="DEC">December</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Year</label>
+                                <input type="number" class="form-control" name="year" value="2015" min="1997" max="2050">
+                            </div>
+                            <div class="form_group">
+                                <label>File to use</label>
+                                <select name="file_name" class="form-control">
+                                    <?php foreach($files as $file):?>
+                                        <option value="<?php echo $file['file_name'];?>"><?php echo $file['file_name'];?></option>
+                                    <?php endforeach;?>
+                                </select>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                            </p>
                         </div>
                         <div class="tab-pane fade" id="settings">
                             <h4>Settings Tab</h4>

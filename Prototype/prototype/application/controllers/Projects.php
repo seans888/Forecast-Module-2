@@ -4,6 +4,7 @@
             $data['title0']='Test Project';
             $data['title1']='Test Files';
             $data['files']=$this->file_model->get_files();
+            $data['title2']="Insert to DB";
 
             $this->load->view('templates/header');
             $this->load->view('modules/menu');
@@ -19,7 +20,8 @@
         {
             $config = array(
                 'upload_path' => FCPATH . 'upload/',
-                'allowed_types' => 'xls|xlsx'
+                'allowed_types' => 'xls|xlsx',
+                'remove_spaces' => 'FALSE'
             );
             $this->load->library('upload', $config);
             if ($this->upload->do_upload('file')) {

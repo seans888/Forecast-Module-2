@@ -19,6 +19,9 @@
             $this->load->view('templates/footer');
         }
         public function insert(){
+
             $this->file_model->insert_data();
+
+
         }
     }
