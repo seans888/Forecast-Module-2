@@ -53,6 +53,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['projects']='projects/index';
 
 $route['default_controller'] = 'employees/login';
+
+$route['files/manipulate/(:any)'] ='files/manipulate/$1';
+
 $route['(:any)']='pages/view/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = true;

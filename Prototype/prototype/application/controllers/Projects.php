@@ -15,28 +15,25 @@
             require(APPPATH.'third_party/PHPExcel-1.8/Classes/PHPExcel.php');
 
         }
-        public function import_data(){
-                $config = array(
-                    'upload_path' => FCPATH.'upload/',
-                    'allowed_types' => 'xls|xlsx'
-                );
-                $this->load->library('upload', $config);
-                if ($this->upload->do_upload('file')) {
-                    $dummyfile = $this->upload->data();
-                    $file_data=$_FILES['file']['name'];
-                    $this->project_model->upload_file($file_data);
-                    $this->session->set_flashdata('file_upload','File uploaded');
-                    redirect('projects/index');
-                    @chmod($dummyfile['full_path'], 0777);
-                }else{
-                    $this->session->set_flashdata('file_no_upload','No file chosen/wrong format. XLS|XLSX only');
-                    redirect('projects/index');
-                }
-
-
-
-
-
+        public function import_data()
+        {
+            $config = array(
+                'upload_path' => FCPATH . 'upload/',
+                'allowed_types' => 'xls|xlsx'
+            );
+            $this->load->library('upload', $config);
+            if ($this->upload->do_upload('file')) {
+                $dummyfile = $this->upload->data();
+                $file_data = $_FILES['file']['name'];
+                $this->project_model->upload_file($file_data);
+                $this->session->set_flashdata('file_upload', 'File uploaded');
+                redirect('projects/index');
+                @chmod($dummyfile['full_path'], 0777);
+            } else {
+                $this->session->set_flashdata('file_no_upload', 'No file chosen/wrong format. XLS|XLSX only');
+                redirect('projects/index');
+            }
+        }
 
             /*
                 $this->load->library('Spreadsheet_Excel_Reader');
@@ -62,8 +59,6 @@
                 die();
             */
 
-
-        }
     }
 
 

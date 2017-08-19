@@ -7,4 +7,8 @@
             $query=$this->db->get('files');
             return $query->result_array();
         }
+        public function get_file($id){
+            $query=$this->db->get_where('files',array('id'=>$id));
+            return $query->row();
+        }
     }
