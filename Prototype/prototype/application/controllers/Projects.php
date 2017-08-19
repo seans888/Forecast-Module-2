@@ -1,9 +1,13 @@
 <?php
     class Projects extends CI_Controller{
         public function index(){
+            $data['title0']='Test Project';
+            $data['title1']='Test Files';
+            $data['files']=$this->file_model->get_files();
+
             $this->load->view('templates/header');
             $this->load->view('modules/menu');
-            $this->load->view('projects/menu');
+            $this->load->view('projects/menu',$data);
             $this->load->view('scripts/home');
             $this->load->view('templates/footer');
         }

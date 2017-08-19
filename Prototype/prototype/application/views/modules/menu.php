@@ -23,7 +23,7 @@
                     <a href="#"><i class="fa fa-th-list"></i> Projects<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url(); ?>projects/index"><i class="fa fa-folder-o"></i> Revenue Project</a>
+                            <a href="<?php echo base_url(); ?>projects/index"><i class="fa fa-folder-o"></i> Test Project</a>
 
                         </li>
 
