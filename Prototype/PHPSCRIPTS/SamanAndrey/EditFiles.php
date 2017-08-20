@@ -1,7 +1,7 @@
 <?php
 // Include PHPExcel library and create its object
 
-require_once dirname(__FILE__) . '/../Classes/PHPExcel.php';
+require_once dirname(__FILE__) . '/Classes/PHPExcel.php';
 
 // Load an existing spreadsheet template
 
@@ -11,12 +11,26 @@ $phpExcel = PHPExcel_IOFactory::load('RFS2016.xlsx');
 
 $sheet = $phpExcel ->getActiveSheet();
 
+function insert_values($col,$column,$sheet){
+    $value = 45; //replace with db query
+
+    while($col != $column){
+        $row = 8;
+        while($row != 10){
+            $sheet -> setCellValueByColumnAndRow($col, $row, $value);
+            $row++;
+        }
+        $col++;
+    }
+}
+
 // Edit Cells for Individual
-
-//Rack
 $col = 1;
-$value = 45;
+//Rack
 
+insert_values($col,4,$sheet);
+
+/*
 while($col != 4){
     $row = 8;
     while($row != 10){
@@ -25,8 +39,11 @@ while($col != 4){
     }
     $col++;
 }
+*/
 
 //Corporate
+insert_values($col,7,$sheet);
+/*
 while($col != 7) {
     $row = 8;
     while ($row != 10) {
@@ -35,9 +52,12 @@ while($col != 7) {
     }
     $col++;
 }
+*/
 
 
 //Corporate Others
+insert_values($col,10,$sheet);
+/*
 while($col != 10) {
     $row = 8;
     while ($row != 10) {
@@ -46,8 +66,10 @@ while($col != 10) {
     }
     $col++;
 }
-
+*/
 //Packages/Promo
+insert_values($col,13,$sheet);
+/*
 while($col != 13) {
     $row = 8;
     while ($row != 10) {
@@ -56,8 +78,10 @@ while($col != 13) {
     }
     $col++;
 }
-
+*/
 //Wholesale Online
+insert_values($col,16,$sheet);
+/*
 while($col != 16) {
     $row = 8;
     while ($row != 10) {
@@ -66,8 +90,10 @@ while($col != 16) {
     }
     $col++;
 }
-
+*/
 //Wholesale Offline
+insert_values($col,19,$sheet);
+/*
 while($col != 19) {
     $row = 8;
     while ($row != 10) {
@@ -76,8 +102,10 @@ while($col != 19) {
     }
     $col++;
 }
-
+*/
 //Individual Others
+insert_values($col,22,$sheet);
+/*
 while($col != 22) {
     $row = 8;
     while ($row != 10) {
@@ -86,8 +114,10 @@ while($col != 22) {
     }
     $col++;
 }
-
+*/
 //Industry Rate
+insert_values($col,25,$sheet);
+/*
 while($col != 25) {
     $row = 8;
     while ($row != 10) {
@@ -96,12 +126,14 @@ while($col != 25) {
     }
     $col++;
 }
-
+*/
 //Edit Cells for Group
 $col = 26;
 $value = 60;
 
 //Corporate Meetings
+insert_values($col,28,$sheet);
+/*
 while($col != 28) {
     $row = 8;
     while ($row != 10) {
@@ -110,8 +142,10 @@ while($col != 28) {
     }
     $col++;
 }
-
-//Convention/Association
+*/
+//Convention/
+insert_values($col,32,$sheet);
+/*
 while($col != 32) {
     $row = 8;
     while ($row != 10) {
@@ -120,8 +154,10 @@ while($col != 32) {
     }
     $col++;
 }
-
+*/
 //Gov't/NGOs
+insert_values($col,35,$sheet);
+/*
 while($col != 35) {
     $row = 8;
     while ($row != 10) {
@@ -130,8 +166,10 @@ while($col != 35) {
     }
     $col++;
 }
-
+*/
 //Group Tours
+insert_values($col,38,$sheet);
+/*
 while($col != 38) {
     $row = 8;
     while ($row != 10) {
@@ -140,8 +178,10 @@ while($col != 38) {
     }
     $col++;
 }
-
+*/
 //Group Others
+insert_values($col,41,$sheet);
+/*
 while($col != 41) {
     $row = 8;
     while ($row != 10) {
@@ -150,7 +190,7 @@ while($col != 41) {
     }
     $col++;
 }
-
+*/
 
 
 
@@ -161,4 +201,4 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
 
 // Save the spreadsheet: Filename should be dynamic
 
-$writer->save('Results2016.xlsx');
+$writer->save('Results2017.xlsx');
