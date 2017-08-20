@@ -126,6 +126,6 @@ echo "<br>";*/
 $query = "select " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
 echo "<strong>Query: </strong>";
 echo $query;
-$result = $conn -> query($query);
+echo $result = $conn -> query($query);
 ?>
 

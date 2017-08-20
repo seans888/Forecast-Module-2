@@ -126,6 +126,7 @@ echo "<br>";*/
 $query = "select " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
 
 echo "<strong>Query: </strong>";
+echo $query."<br/><br/>";
 
 $myArray = array();
 if ($result = $conn -> query($query)) {
@@ -134,7 +135,7 @@ if ($result = $conn -> query($query)) {
         $myArray[] = $row;
     }
 
-    header('Content-Type: application/json');
+    //header('Content-Type: application/json');
     echo json_encode(array("Result"=>$myArray));
 }
 ?>
