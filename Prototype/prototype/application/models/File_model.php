@@ -284,7 +284,7 @@ echo "<br>";
 echo $segmentString;
 echo "<br>";*/
 
-$query = "select " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
+$query = "select actual_id, seg_id, " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
 
 echo "<strong>Query: </strong>";
 echo $query."<br/><br/>";

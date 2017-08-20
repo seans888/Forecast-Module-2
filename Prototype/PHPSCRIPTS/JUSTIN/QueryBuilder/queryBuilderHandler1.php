@@ -137,7 +137,8 @@ if ($result = $conn -> query($query)) {
 
     //header('Content-Type: application/json');
     $json = json_encode(array("Result"=>$myArray));
-    echo "<pre>";var_dump(json_decode($json, true));echo "</pre>";
+    echo "<pre>";var_dump(json_decode($json,true));echo "</pre>";
+    $resultArray = json_decode($json);
 }
 ?>
 
