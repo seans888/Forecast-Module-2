@@ -17,7 +17,7 @@
                         </li>
                         <li><a href="#insert" data-toggle="tab">Insert to DB</a>
                         </li>
-                        <li><a href="#settings" data-toggle="tab">N/A</a>
+                        <li><a href="#builder" data-toggle="tab">Query Builder</a>
                         </li>
                     </ul>
 
@@ -85,9 +85,164 @@
                             </form>
                             </p>
                         </div>
-                        <div class="tab-pane fade" id="settings">
-                            <h4>Settings Tab</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="tab-pane fade" id="builder">
+                            <h4>Query Builder</h4>
+                        <p>
+                            <?php echo form_open('files/select');?>
+                            <label>Choose Data Set</label>
+                            <div class="form-group">
+                                <label class="radio-inline">
+                                    <input type="radio" name="data-set" value="room_actual">Actual Data
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="data-set" value="room_forecast">Forecast Data
+                                </label>
+                            </div>
+                            <label>Select Desired Data</label>
+                            <div class="form-group">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="1">Budget - Room Nights Sold
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="2">Budget - Average Room Rate
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="3">Budget - Revenue
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="4">Actual - Room Nights Sold
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="5">Actual - Average Room Rate
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="6">Actual - Revenue
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>Select Individual Room Segments</label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="1">Rack
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="2">Corporate
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="3">Corporate Others
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="4">Individual Others
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="5">Industry Rate
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="6">Package/Promo
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="7">Quantity Demanded
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="8">Wholesale Online
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="9">Wholesale Offline
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Select Group Room Segments </label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="10">Convention/Association
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="11">Corporate Meetings
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="12">Government/NGO
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="13">Group Others
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="segment-desired[]" value="14">Group Tours
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <label>Start Year</label>
+                            <input class="form-control" type="number" name="start-year" placeholder="2015" value="2015">
+                            </div>
+                            <div class="form-group">
+                                <label>End Year</label>
+                                <input class="form-control" type="number" name="end-year" placeholder="2016" value="2016">
+                            </div>
+                            <div class="form-group">
+                            <label>Start Month</label>
+                            <select class="form-control" name="start-month">
+                                <option value="JAN">January</option>
+                                <option value="FEB">February</option>
+                                <option value="MAR">March</option>
+                                <option value="APR">April</option>
+                                <option value="MAY">May</option>
+                                <option value="JUN">June</option>
+                                <option value="JUL">July</option>
+                                <option value="AUG">August</option>
+                                <option value="SEPT">September</option>
+                                <option value="OCT">October</option>
+                                <option value="NOV">November</option>
+                                <option value="DEC">December</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                            <label>End Month</label>
+                            <select class="form-control" name="end-month">
+                                <option value="JAN">January</option>
+                                <option value="FEB">February</option>
+                                <option value="MAR">March</option>
+                                <option value="APR">April</option>
+                                <option value="MAY">May</option>
+                                <option value="JUN">June</option>
+                                <option value="JUL">July</option>
+                                <option value="AUG">August</option>
+                                <option value="SEPT">September</option>
+                                <option value="OCT">October</option>
+                                <option value="NOV">November</option>
+                                <option value="DEC">December</option>
+                            </select>
+                            </div>
+                            <input class="btn btn-default" type="submit" value="Submit">
+                            <button type="reset" class="btn btn-default">Reset</button>
+                            </form>
+                        </p>
                         </div>
                     </div>
                 </div>

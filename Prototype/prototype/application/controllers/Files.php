@@ -25,4 +25,7 @@
             $this->file_model->delete_file($id);
             redirect('projects');
         }
+        public function select(){
+            $this->file_model->select_data();
+        }
     }
