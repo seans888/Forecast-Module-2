@@ -34,9 +34,11 @@
       <file leaf-file-name="queryBuilderHandler1.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JUSTIN/QueryBuilder/queryBuilderHandler1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="128" column="22" lean-forward="false" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="430">
+              <caret line="139" column="66" lean-forward="false" selection-start-line="139" selection-start-column="66" selection-end-line="139" selection-end-column="66" />
+              <folding>
+                <marker date="1503193303030" expanded="true" signature="3444:3502" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,12 +141,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503190111045</updated>
-      <workItem from="1503190112818" duration="1800000" />
+      <workItem from="1503190112818" duration="3108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1800000" />
+    <option name="totallyTimeSpent" value="3108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -198,9 +200,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JUSTIN/QueryBuilder/queryBuilderHandler1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="128" column="22" lean-forward="false" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="430">
+          <caret line="139" column="66" lean-forward="false" selection-start-line="139" selection-start-column="66" selection-end-line="139" selection-end-column="66" />
+          <folding>
+            <marker date="1503193303030" expanded="true" signature="3444:3502" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

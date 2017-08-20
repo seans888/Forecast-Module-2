@@ -131,12 +131,13 @@ echo $query."<br/><br/>";
 $myArray = array();
 if ($result = $conn -> query($query)) {
 
-    while($row = $result->fetch_array(MYSQL_ASSOC)) {
+    while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $myArray[] = $row;
     }
 
     //header('Content-Type: application/json');
-    echo json_encode(array("Result"=>$myArray));
+    $json = json_encode(array("Result"=>$myArray));
+    echo "<pre>";var_dump(json_decode($json, true));echo "</pre>";
 }
 ?>
 
