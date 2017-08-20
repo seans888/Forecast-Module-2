@@ -291,12 +291,12 @@ echo $query."<br/><br/>";
 
 $this->load->library('table');
 $template=array(
-    'table_open' => '<table border="1" cellpadding="2" cellspacing="1">'
+    'table_open' => '<table width="100%" class="table table-striped table-bordered table-hover">'
 );
 $this->table->set_template($template);
-$que=$this->db->query($query);
-$que->result_array();
-echo $this->table->generate($que);
+return $this->db->query($query);
+//$que->result_array();
+//echo $this->table->generate($que);
 
 
 

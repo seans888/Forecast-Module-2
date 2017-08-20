@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo base_url();?>home">JUSTIN'S LEAGUE</a>
+        <a class="navbar-brand" href="<?php echo base_url();?>home">RFSA</a>
     </div>
 
     <div class="navbar-default sidebar" role="navigation">
@@ -24,7 +24,6 @@
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="<?php echo base_url(); ?>projects/index"><i class="fa fa-folder-o"></i> Test Project</a>
-
                         </li>
 
                     </ul>

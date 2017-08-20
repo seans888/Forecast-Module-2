@@ -26,6 +26,16 @@
             redirect('projects');
         }
         public function select(){
-            $this->file_model->select_data();
+            $data['table']=$this->file_model->select_data();
+
+
+            $this->load->view('templates/header');
+            $this->load->view('modules/menu');
+            $this->load->view('files/output',$data);
+            $this->load->view('scripts/home');
+            $this->load->view('templates/footer');
+
+
+
         }
     }
