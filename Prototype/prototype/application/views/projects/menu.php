@@ -123,6 +123,16 @@
                             </div>
                             <div class="form-group">
                                 <label>Select Individual Room Segments</label>
+                                <script language="JavaScript">
+                                    function toggle(source) {
+                                        checkboxes = document.getElementsByName('segment-desired[]');
+                                        for(var i=0, n=checkboxes.length;i<n;i++) {
+                                            checkboxes[i].checked = source.checked;
+                                        }
+                                    }
+                                </script>
+
+                                <input type="checkbox" onClick="toggle(this)" /> Select All<br/>
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" name="segment-desired[]" value="1">Rack
