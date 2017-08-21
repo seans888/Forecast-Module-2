@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Timespan</title>
+
+    <script language="JavaScript">
+        function myFunction(){
+            if(document.getElementById('sel').selected==true) {
+                document.getElementById('in').removeAttribute('disabled');
+                document.getElementById('in').value = 3;
+            }
+        }
+    </script>
+
+</head>
+<body>
+<form action="form_handler.php" method="post">
+    <table>
+        <tr>
+            <td>Select Timespan</td>
+            <td>
+                <select id="selectid" name="selectname" onchange="myFunction()">
+                    <option value="3">Past 3 Months</option>
+                    <option value="6">Past 6 Months</option>
+                    <option value="12">Past Year</option>
+                    <option id="sel">Indicate Timespan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Number of Months</td>
+            <td><input disabled id="in" type="number" name="year" min="3" max="24"></td>
+        </tr>
+        <td>
+            <input type="submit" value="submit"/>
+        </td>
+    </table>
+</form>
+</body>
+</html>
