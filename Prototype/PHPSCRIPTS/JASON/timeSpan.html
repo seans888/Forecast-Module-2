@@ -10,18 +10,25 @@
                 document.getElementById('in').removeAttribute('disabled');
                 document.getElementById('in').value = 3;
             }
+            else{
+                document.getElementById('in').disabled=true;
+                document.getElementById('in').value = null;
+            }
+        }
+        function setSelValue(){
+            document.getElementById('sel').value = document.getElementById('in').value;
         }
     </script>
 
 </head>
 <body>
-<form action="form_handler.php" method="post">
+<form action="Forecast5.php" method="post">
     <table>
         <tr>
             <td>Select Timespan</td>
             <td>
-                <select id="selectid" name="selectname" onchange="myFunction()">
-                    <option value="3">Past 3 Months</option>
+                <select id="selectid" name="selectTimeSpan" onchange="myFunction()">
+                    <option  value="3">Past 3 Months</option>
                     <option value="6">Past 6 Months</option>
                     <option value="12">Past Year</option>
                     <option id="sel">Indicate Timespan</option>
@@ -30,10 +37,10 @@
         </tr>
         <tr>
             <td>Number of Months</td>
-            <td><input disabled id="in" type="number" name="year" min="3" max="24"></td>
+            <td><input disabled id="in" type="number" name="monthNum" min="3" max="24"></td>
         </tr>
         <td>
-            <input type="submit" value="submit"/>
+            <input type="submit" value="submit" onclick="setSelValue()"/>
         </td>
     </table>
 </form>
