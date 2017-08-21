@@ -32,52 +32,50 @@ function subsegment($sql_rns, $y, $sub, $sheet, $conn){
     $sheet -> setCellValueByColumnAndRow($y + 3, $x, $value);
 }
 
-$sql_date = "select date from room_actual where seg_id = \"rck\" order by date asc";
+$sql_date = "select date from room_actual where seg_id = \"rck\" order by date DESC ";
 
 $sql_value = "select ACTUAL_RNS from room_actual where seg_id = \"rck\" order by date asc";
 
-$sheet = $phpExcel ->setActiveSheetIndex();
+$sheet = $phpExcel ->getActiveSheet();
 
-function insert_values($data,$y,$query,$conn,$sheet){
+/*function insert_values($string,$string2,$query,$query2,$conn,$sheet){
     $result = $conn->query($query);
-    $x = 2;
-    while($row = $result->fetch_assoc()){
-        $value = $row[$data];
-        $sheet -> setCellValueByColumnAndRow($y, $x, $value);
-        $x++;
+    $result2 = $conn->query($query2);
+    while($row = $result->fetch_assoc() && $row = $result2->fetch_assoc()){
+        $value = $row[$string];
+        $value2 = $row[$string2];
+        $sheet -> setCellValueByColumnAndRow(1, 2, $value);
+        $sheet -> setCellValueByColumnAndRow(2, 2, $value2);
+        $sheet -> insertNewRowBefore(2,1);
     }
-}
+}*/
 function removeComma($number)
 {
     $number = str_replace("-",",",$number);
     return $number;
 }
 
+
 $result = $conn->query($sql_date);
-$x = 2;
+$result2 = $conn->query($sql_value);
+//$x = 2;
 while($row = $result->fetch_assoc()){
     $value = removeComma($row["date"]);
-
-    //$date= date('Y-m-d',PHPExcel_Shared_Date::PHPToExcel('$value'));
-    $sheet -> setCellValueByColumnAndRow(1, $x, '=DATE('.$value.')');
-    $x++;
+    $sheet -> setCellValueByColumnAndRow(1, 2, '=DATE('.$value.')');
+    $value = $row["ACTUAL_RNS"];
+    $sheet -> setCellValueByColumnAndRow(2, 2, $value2);
+    //$x++;
+    $sheet -> insertNewRowBefore(2,1);
 }
 
-$result = $conn->query($sql_value);
+//$sheet -> setCellValueByColumnAndRow(1, $x, '=EOMONTH(DATE('.$value.'),1)');
+/*$result = $conn->query($sql_value);
 $x = 2;
 while($row = $result->fetch_assoc()){
     $value = $row["ACTUAL_RNS"];
     $sheet -> setCellValueByColumnAndRow(2, $x, $value);
     $x++;
-}
-
-
-
-        $sheet -> setCellValueByColumnAndRow(3, $x, '=FORECAST.ETS(B26,$C$2:$C$25,$B$2:$B$25,1,1)');
-
-
-//increment $x depending on time interval
-
+}*/
 
 
 // We will create xlsx file (Excel 2007 and above)
