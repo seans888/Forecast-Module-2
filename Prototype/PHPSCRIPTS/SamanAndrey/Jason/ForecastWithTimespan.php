@@ -36,7 +36,19 @@ $ctr = 0;
 while ($ctr != 13){
     //set the designate sheets to go to
     $sheet = $phpExcel ->setActiveSheetIndex($ctr);
+	
+	//add defined names to new excel
+    $endofrange = $timeSpan+1;
+    $str=$ctr;
+	if($ctr<10){
+		$str = '0'.$ctr;
+	}
 
+    $phpExcel->addNamedRange(new PHPExcel_NamedRange('timeline', $sheet, 'A2:A'.$endofrange,true));
+    $phpExcel->addNamedRange(new PHPExcel_NamedRange('rns', $sheet, '!B2:B'.$endofrange,true));
+    $phpExcel->addNamedRange(new PHPExcel_NamedRange('arr', $sheet, '!C2:C'.$endofrange,true));
+    $phpExcel->addNamedRange(new PHPExcel_NamedRange('rev', $sheet, '!D2:D'.$endofrange,true));
+	
     //insert dates on excel
     $date_query = "select date from(select * from room_actual where seg_id='$segments[$ctr]' order by date desc limit $timeSpan) sub order by date asc;";
     $result = $conn->query($date_query);
@@ -77,13 +89,8 @@ while ($ctr != 13){
         $sheet -> setCellValueByColumnAndRow(3, $x, $value);
         $x++;
     }
-
-//add defined names to new excel
-    $endofrange = $timeSpan+1;
-    $phpExcel->addNamedRange(new PHPExcel_NamedRange('timeline', $sheet, 'A2:A'.$endofrange));
-    $phpExcel->addNamedRange(new PHPExcel_NamedRange('rns', $sheet, 'B2:B'.$endofrange));
-    $phpExcel->addNamedRange(new PHPExcel_NamedRange('arr', $sheet, 'C2:C'.$endofrange));
-    $phpExcel->addNamedRange(new PHPExcel_NamedRange('rev', $sheet, 'D2:D'.$endofrange));
+	
+	
     $ctr++;
 }
 
