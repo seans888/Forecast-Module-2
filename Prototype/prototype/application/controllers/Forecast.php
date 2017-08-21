@@ -9,4 +9,7 @@
             unlink(urldecode(FCPATH.'forecasts/'.$name));
             redirect('projects/index');
         }
+        public function download($name){
+            force_download(FCPATH.'/forecasts/'.$name,NULL);
+        }
 }

@@ -267,7 +267,7 @@
                                 <?php foreach($forecasts as $forecast):?>
                                     <li class="list-group-item">
                                         <?php echo form_open('/forecast/del_forecast/'.$forecast);?>
-                                        <?php echo $forecast;?>
+                                        <a href="<?php echo base_url()?>forecast/download/<?php echo $forecast;?>"><?php echo $forecast;?></a>
                                         <input type="submit" value="Delete" class="btn btn-danger pull-right">
                                         </form>
                                     </li>
