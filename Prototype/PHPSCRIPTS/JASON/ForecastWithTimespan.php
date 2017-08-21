@@ -143,20 +143,21 @@ $writer->save($title);
 
 //readonly the saved file
 $phpExcel = PHPExcel_IOFactory::load($title);
-$sheet1 = $phpExcel ->setActiveSheetIndex(0);
-echo $forecastrns = $sheet1->getCell('G3')->getFormattedValue();
 
 //insert into database forecasted values
-/*for($ss=0;$ss<13;$ss++){
-    $sheet1 = $phpExcel ->setActiveSheetIndex($ss);
+$ctr = 0;
+
+while ($ctr != 13){
+    //set the designate sheets to go to
+    $sheet1 = $phpExcel ->setActiveSheetIndex($ctr);
     $date = $date = date('Y-m-d'); //today's date
-    $subsegment = $segments[$ss];
-    echo $forecastrns = $sheet1->getCell('G3')->getFormattedValue();
-    echo $forecastarr = $sheet1->getCell('H3')->getFormattedValue();
-    echo $forecastrev = $sheet1->getCell('I3')->getFormattedValue();
+    $subsegment = $segments[$ctr];
+    echo $forecastrns = $sheet1->getCell('G2')->getFormattedValue();
+    echo $forecastarr = $sheet1->getCell('H2')->getFormattedValue();
+    echo $forecastrev = $sheet1->getCell('I2')->getFormattedValue();
 
-
-    $query = "insert ignore into room_forecast values('$forecastID','$subsegment','$date',$forecastrns,$forecastarr,$forecastrev)";
+    $ctr++;
+    /*$query = "insert ignore into room_forecast values('$forecastID','$subsegment','$date',$forecastrns,$forecastarr,$forecastrev)";
     if($conn -> query($query) === FALSE)
     {
         echo "QUERY FAILED at " . $query;
@@ -166,5 +167,5 @@ echo $forecastrns = $sheet1->getCell('G3')->getFormattedValue();
     {
         echo $query . " SUCCESS";
         echo nl2br("\n");
-    }
-}*/
+    }*/
+}

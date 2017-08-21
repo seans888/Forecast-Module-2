@@ -35,23 +35,33 @@
       <file leaf-file-name="ForecastWithTimespan.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="9" selection-end-column="53" />
+            <state relative-caret-position="461">
+              <caret line="125" column="90" lean-forward="false" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="90" />
               <folding>
-                <element signature="e#3049#3144#0#PHP" expanded="false" />
-                <element signature="e#3145#3225#0#PHP" expanded="false" />
-                <element signature="e#3226#3329#0#PHP" expanded="false" />
+                <element signature="n#changeDashToComma#0;n#!!top" expanded="false" />
+                <element signature="n#getMonthOnly#0;n#!!top" expanded="false" />
+                <element signature="n#getYearOnly#0;n#!!top" expanded="false" />
                 <element signature="e#3373#3657#0#PHP" expanded="false" />
-                <marker date="1503340254438" expanded="true" signature="1342:1473" ph="select date " />
-                <marker date="1503340254438" expanded="true" signature="1853:1990" ph="select ACTUA... *" />
-                <marker date="1503340254438" expanded="true" signature="1876:1958" ph="select * fro... room_actual" />
-                <marker date="1503340254438" expanded="true" signature="2261:2398" ph="select ACTUA... *" />
-                <marker date="1503340254438" expanded="true" signature="2284:2366" ph="select * fro... room_actual" />
-                <marker date="1503340254438" expanded="true" signature="2659:2800" ph="select ACTUA... *" />
-                <marker date="1503340254438" expanded="true" signature="2686:2768" ph="select * fro... room_actual" />
-                <marker date="1503340254438" expanded="true" signature="3704:3751" ph="select ACTUA... room_actual" />
-                <marker date="1503340254438" expanded="true" signature="3704:3783" ph="select ACTUA... room_actual" />
+                <marker date="1503347941817" expanded="true" signature="1342:1473" ph="select date " />
+                <marker date="1503347941817" expanded="true" signature="1853:1990" ph="select ACTUA... *" />
+                <marker date="1503347941817" expanded="true" signature="1876:1958" ph="select * fro... room_actual" />
+                <marker date="1503347941817" expanded="true" signature="2261:2398" ph="select ACTUA... *" />
+                <marker date="1503347941817" expanded="true" signature="2284:2366" ph="select * fro... room_actual" />
+                <marker date="1503347941817" expanded="true" signature="2659:2800" ph="select ACTUA... *" />
+                <marker date="1503347941817" expanded="true" signature="2686:2768" ph="select * fro... room_actual" />
+                <marker date="1503347941817" expanded="true" signature="3704:3751" ph="select ACTUA... room_actual" />
+                <marker date="1503347941817" expanded="true" signature="3704:3783" ph="select ACTUA... room_actual" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/test2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="62" column="12" lean-forward="false" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,8 +69,8 @@
       <file leaf-file-name="insertForecastToDB.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/insertForecastToDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            <state relative-caret-position="322">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="170">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -110,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="80" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="112" />
               <folding />
             </state>
           </provider>
@@ -143,9 +153,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql" />
         <option value="$PROJECT_DIR$/PHPSCRIPTS/SamanAndrey/Jason/ForecastWithTimespan.php" />
         <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/insertForecastToDB.php" />
-        <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php" />
         <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/readExcel.php" />
+        <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php" />
         <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/test.php" />
+        <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/test2.php" />
       </list>
     </option>
   </component>
@@ -256,16 +267,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42413000" />
+    <option name="totallyTimeSpent" value="48933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03645008" sideWeight="0.49707174" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21870047" sideWeight="0.4941435" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19692533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22345483" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21870047" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -295,14 +306,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/Forecast5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="77" column="90" lean-forward="false" selection-start-line="77" selection-start-column="90" selection-end-line="77" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/insertForecastToDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-527">
@@ -392,19 +395,19 @@
         <state relative-caret-position="905">
           <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding>
-            <element signature="e#3049#3144#0#PHP" expanded="false" />
-            <element signature="e#3145#3225#0#PHP" expanded="false" />
-            <element signature="e#3226#3329#0#PHP" expanded="false" />
+            <element signature="n#changeDashToComma#0;n#!!top" expanded="false" />
+            <element signature="n#getMonthOnly#0;n#!!top" expanded="false" />
+            <element signature="n#getYearOnly#0;n#!!top" expanded="false" />
             <element signature="e#3373#3657#0#PHP" expanded="false" />
-            <marker date="1503340254438" expanded="true" signature="1342:1473" ph="select date " />
-            <marker date="1503340254438" expanded="true" signature="1853:1990" ph="select ACTUA... *" />
-            <marker date="1503340254438" expanded="true" signature="1876:1958" ph="select * fro... room_actual" />
-            <marker date="1503340254438" expanded="true" signature="2261:2398" ph="select ACTUA... *" />
-            <marker date="1503340254438" expanded="true" signature="2284:2366" ph="select * fro... room_actual" />
-            <marker date="1503340254438" expanded="true" signature="2659:2800" ph="select ACTUA... *" />
-            <marker date="1503340254438" expanded="true" signature="2686:2768" ph="select * fro... room_actual" />
-            <marker date="1503340254438" expanded="true" signature="3704:3751" ph="select ACTUA... room_actual" />
-            <marker date="1503340254438" expanded="true" signature="3704:3783" ph="select ACTUA... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="1342:1473" ph="select date " />
+            <marker date="1503347941817" expanded="true" signature="1853:1990" ph="select ACTUA... *" />
+            <marker date="1503347941817" expanded="true" signature="1876:1958" ph="select * fro... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="2261:2398" ph="select ACTUA... *" />
+            <marker date="1503347941817" expanded="true" signature="2284:2366" ph="select * fro... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="2659:2800" ph="select ACTUA... *" />
+            <marker date="1503347941817" expanded="true" signature="2686:2768" ph="select * fro... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="3704:3751" ph="select ACTUA... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="3704:3783" ph="select ACTUA... room_actual" />
           </folding>
         </state>
       </provider>
@@ -673,14 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
@@ -706,22 +701,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/form_handler.php">
+    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="137" column="5" lean-forward="true" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/test2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="62" column="12" lean-forward="false" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="125" column="90" lean-forward="false" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="90" />
           <folding>
-            <element signature="e#411#683#0#PHP" expanded="false" />
-            <element signature="e#700#972#0#PHP" expanded="false" />
-            <element signature="e#991#1238#0#PHP" expanded="false" />
+            <element signature="n#changeDashToComma#0;n#!!top" expanded="false" />
+            <element signature="n#getMonthOnly#0;n#!!top" expanded="false" />
+            <element signature="n#getYearOnly#0;n#!!top" expanded="false" />
+            <element signature="e#3373#3657#0#PHP" expanded="false" />
+            <marker date="1503347941817" expanded="true" signature="1342:1473" ph="select date " />
+            <marker date="1503347941817" expanded="true" signature="1853:1990" ph="select ACTUA... *" />
+            <marker date="1503347941817" expanded="true" signature="1876:1958" ph="select * fro... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="2261:2398" ph="select ACTUA... *" />
+            <marker date="1503347941817" expanded="true" signature="2284:2366" ph="select * fro... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="2659:2800" ph="select ACTUA... *" />
+            <marker date="1503347941817" expanded="true" signature="2686:2768" ph="select * fro... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="3704:3751" ph="select ACTUA... room_actual" />
+            <marker date="1503347941817" expanded="true" signature="3704:3783" ph="select ACTUA... room_actual" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/insertForecastToDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="322">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -734,32 +755,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php">
+    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/form_handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="9" selection-end-column="53" />
+        <state relative-caret-position="292">
+          <caret line="137" column="5" lean-forward="true" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
           <folding>
-            <element signature="e#3049#3144#0#PHP" expanded="false" />
-            <element signature="e#3145#3225#0#PHP" expanded="false" />
-            <element signature="e#3226#3329#0#PHP" expanded="false" />
-            <element signature="e#3373#3657#0#PHP" expanded="false" />
-            <marker date="1503340254438" expanded="true" signature="1342:1473" ph="select date " />
-            <marker date="1503340254438" expanded="true" signature="1853:1990" ph="select ACTUA... *" />
-            <marker date="1503340254438" expanded="true" signature="1876:1958" ph="select * fro... room_actual" />
-            <marker date="1503340254438" expanded="true" signature="2261:2398" ph="select ACTUA... *" />
-            <marker date="1503340254438" expanded="true" signature="2284:2366" ph="select * fro... room_actual" />
-            <marker date="1503340254438" expanded="true" signature="2659:2800" ph="select ACTUA... *" />
-            <marker date="1503340254438" expanded="true" signature="2686:2768" ph="select * fro... room_actual" />
-            <marker date="1503340254438" expanded="true" signature="3704:3751" ph="select ACTUA... room_actual" />
-            <marker date="1503340254438" expanded="true" signature="3704:3783" ph="select ACTUA... room_actual" />
+            <element signature="e#411#683#0#PHP" expanded="false" />
+            <element signature="e#700#972#0#PHP" expanded="false" />
+            <element signature="e#991#1238#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/test.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="112" />
           <folding />
         </state>
       </provider>
