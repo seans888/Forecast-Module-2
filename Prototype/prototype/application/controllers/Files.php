@@ -47,6 +47,6 @@
         }
         public function del_dir($name){
             unlink(urldecode(FCPATH.'upload/'.$name));
-            redirect('projects/index');
+            redirect('projects');
         }
     }
