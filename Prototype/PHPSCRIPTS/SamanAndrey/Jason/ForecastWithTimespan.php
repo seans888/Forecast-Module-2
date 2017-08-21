@@ -7,7 +7,7 @@
  */
 
 //IMPORT PHPEXCEL
-require_once("../PHPExcel-1.8/Classes/PHPExcel.php");
+require_once("Classes/PHPExcel.php");
 
 //LOAD EXCEL TEMPLATE
 $phpExcel = PHPExcel_IOFactory::load('ForecastTemplate.xlsx');
@@ -35,7 +35,7 @@ $x = 2;
 while($row = $result->fetch_assoc()){
     $value = changeDashToComma($row["date"]);
     $sheet -> setCellValueByColumnAndRow(0, $x, '=DATE('.$value.')');
-    $sheet -> setCellValueByColumnAndRow(5, 2, date('Y-M-D', '=EOMONTH(DATE('.$value.'),1)'));
+    $sheet -> setCellValueByColumnAndRow(5, 2,'=EOMONTH(DATE('.$value.'),1)');
     $x++;
 }
 
