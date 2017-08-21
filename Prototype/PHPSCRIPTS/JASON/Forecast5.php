@@ -75,7 +75,7 @@ while($row = $result->fetch_assoc()){
 function insert_forecast($x,$sheet){
     $y = 3;
     while($y != 6){
-        $sheet -> setCellValueByColumnAndRow($y, $x, 45);
+        $sheet -> setCellValueByColumnAndRow($y, $x, '=FORECAST.ETS(B26,$C$2:$C$25,$B$2:$B$25,1,1)');
         $y++;
     }
 
