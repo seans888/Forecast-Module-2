@@ -94,7 +94,7 @@
 
             $conn = new mysqli($host, $user, $pass, $database);
                */
-            require_once(APPPATH.'third_party/PHPExcel-1.8/Classes/PHPExcel.php');;
+            require_once(APPPATH.'third_party/PHPExcel-1.8/Classes/PHPExcel.php');
 
             /*$fileName = "2015 Rooms Segmentation.xlsx";*/
             $excelReader = PHPExcel_IOFactory::createReaderForFile($fileName);

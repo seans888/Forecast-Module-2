@@ -19,6 +19,8 @@
                         </li>
                         <li><a href="#builder" data-toggle="tab">Query Builder</a>
                         </li>
+                        <li><a href="#forecast" data-toggle="tab">Forecast</a>
+                        </li>
                     </ul>
 
                     <!-- Tab panes -->
@@ -253,6 +255,25 @@
                             <button type="reset" class="btn btn-default">Reset</button>
                             </form>
                         </p>
+                        </div>
+                        <div class="tab-pane fade" id="forecast">
+                            <h4>Forecast</h4>
+
+                                <?php echo form_open('forecast/get_forecast');?>
+                                <input type="submit" value="Forecast" class="btn btn-success">
+                                </form>
+                            <ul class="list-group">
+
+                                <?php foreach($forecasts as $forecast):?>
+                                    <li class="list-group-item">
+                                        <?php echo form_open('/forecast/del_forecast/'.$forecast);?>
+                                        <?php echo $forecast;?>
+                                        <input type="submit" value="Delete" class="btn btn-danger pull-right">
+                                        </form>
+                                    </li>
+                                <?php endforeach;?>
+                            </ul>
+
                         </div>
                     </div>
                 </div>

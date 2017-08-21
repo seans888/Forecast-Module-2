@@ -23,7 +23,7 @@
         }
         public function delete($id){
             $this->file_model->delete_file($id);
-            redirect('projects');
+            redirect('projects/index');
         }
         public function select(){
             $data['table']=$this->file_model->select_data();
@@ -47,6 +47,6 @@
         }
         public function del_dir($name){
             unlink(urldecode(FCPATH.'upload/'.$name));
-            redirect('projects');
+            redirect('projects/index');
         }
     }

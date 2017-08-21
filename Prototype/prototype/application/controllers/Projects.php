@@ -3,9 +3,10 @@
         public function index(){
             $data['title0']='Test Project';
             $data['title1']='Test Files';
-            $data['files']=$this->file_model->get_files();
+            //$data['files']=$this->file_model->get_files();
             $data['title2']="Insert to DB";
             $data['files']=directory_map(FCPATH.'upload/');
+            $data['forecasts']=directory_map(FCPATH.'forecasts/');
 
             $this->load->view('templates/header');
             $this->load->view('modules/menu');
