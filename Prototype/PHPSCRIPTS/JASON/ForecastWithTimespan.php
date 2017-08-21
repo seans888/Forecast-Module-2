@@ -35,7 +35,7 @@ $x = 2;
 while($row = $result->fetch_assoc()){
     $value = changeDashToComma($row["date"]);
     $sheet -> setCellValueByColumnAndRow(0, $x, '=DATE('.$value.')');
-    $sheet -> setCellValueByColumnAndRow(3, 2, '=EOMONTH(DATE('.$value.'),1)');
+    $sheet -> setCellValueByColumnAndRow(5, 2, '=EOMONTH(DATE('.$value.'),1)');
     $x++;
 }
 
@@ -49,10 +49,32 @@ while($row = $result->fetch_assoc()){
     $x++;
 }
 
+//insert average room rate on excel
+$rns_query = "select ACTUAL_ARR from(select * from room_actual where seg_id='rck' order by date desc limit $timeSpan) sub order by date asc;";
+$result = $conn->query($rns_query);
+$x = 2;
+while($row = $result->fetch_assoc()){
+    $value = $row["ACTUAL_ARR"];
+    $sheet -> setCellValueByColumnAndRow(2, $x, $value);
+    $x++;
+}
+
+//insert revenue on excel
+$rns_query = "select ACTUAL_REVENUE from(select * from room_actual where seg_id='rck' order by date desc limit $timeSpan) sub order by date asc;";
+$result = $conn->query($rns_query);
+$x = 2;
+while($row = $result->fetch_assoc()){
+    $value = $row["ACTUAL_REVENUE"];
+    $sheet -> setCellValueByColumnAndRow(3, $x, $value);
+    $x++;
+}
+
 //add defined names to new excel
 $endofrange = $timeSpan+1;
+$phpExcel->addNamedRange(new PHPExcel_NamedRange('timeline', $sheet, 'A2:A'.$endofrange));
 $phpExcel->addNamedRange(new PHPExcel_NamedRange('rns', $sheet, 'B2:B'.$endofrange));
-$phpExcel->addNamedRange(new PHPExcel_NamedRange('Timeline', $sheet, 'A2:A'.$endofrange));
+$phpExcel->addNamedRange(new PHPExcel_NamedRange('arr', $sheet, 'C2:C'.$endofrange));
+$phpExcel->addNamedRange(new PHPExcel_NamedRange('rev', $sheet, 'D2:D'.$endofrange));
 
 
 //functions

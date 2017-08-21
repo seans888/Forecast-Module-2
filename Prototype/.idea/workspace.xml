@@ -35,13 +35,17 @@
       <file leaf-file-name="ForecastWithTimespan.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+            <state relative-caret-position="239">
+              <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
               <folding>
                 <element signature="e#6#95#0#PHP" expanded="true" />
-                <marker date="1503326356596" expanded="true" signature="636:755" ph="select date " />
-                <marker date="1503326356596" expanded="true" signature="1100:1225" ph="select ACTUA... *" />
-                <marker date="1503326356596" expanded="true" signature="1123:1193" ph="select * fro... room_actual" />
+                <marker date="1503327523834" expanded="true" signature="636:755" ph="select date " />
+                <marker date="1503327523834" expanded="true" signature="1100:1225" ph="select ACTUA... *" />
+                <marker date="1503327523834" expanded="true" signature="1123:1193" ph="select * fro... room_actual" />
+                <marker date="1503327523834" expanded="true" signature="1464:1589" ph="select ACTUA... *" />
+                <marker date="1503327523834" expanded="true" signature="1487:1557" ph="select * fro... room_actual" />
+                <marker date="1503327523834" expanded="true" signature="1818:1947" ph="select ACTUA... *" />
+                <marker date="1503327523834" expanded="true" signature="1845:1915" ph="select * fro... room_actual" />
               </folding>
             </state>
           </provider>
@@ -225,12 +229,12 @@
       <workItem from="1503190112818" duration="3707000" />
       <workItem from="1503242842645" duration="620000" />
       <workItem from="1503243648893" duration="6426000" />
-      <workItem from="1503300325478" duration="20134000" />
+      <workItem from="1503300325478" duration="21364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30887000" />
+    <option name="totallyTimeSpent" value="32117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -500,8 +504,8 @@
         <state relative-caret-position="340">
           <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
           <folding>
-            <marker date="1503313867135" expanded="true" signature="924:993" ph="select date " />
-            <marker date="1503313867135" expanded="true" signature="1011:1086" ph="select ACTUA... room_actual" />
+            <marker date="1503326720644" expanded="true" signature="924:990" ph="select date " />
+            <marker date="1503326720644" expanded="true" signature="1011:1086" ph="select ACTUA... room_actual" />
           </folding>
         </state>
       </provider>
@@ -605,13 +609,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        <state relative-caret-position="239">
+          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding>
             <element signature="e#6#95#0#PHP" expanded="true" />
-            <marker date="1503326356596" expanded="true" signature="636:755" ph="select date " />
-            <marker date="1503326356596" expanded="true" signature="1100:1225" ph="select ACTUA... *" />
-            <marker date="1503326356596" expanded="true" signature="1123:1193" ph="select * fro... room_actual" />
+            <marker date="1503327523834" expanded="true" signature="636:755" ph="select date " />
+            <marker date="1503327523834" expanded="true" signature="1100:1225" ph="select ACTUA... *" />
+            <marker date="1503327523834" expanded="true" signature="1123:1193" ph="select * fro... room_actual" />
+            <marker date="1503327523834" expanded="true" signature="1464:1589" ph="select ACTUA... *" />
+            <marker date="1503327523834" expanded="true" signature="1487:1557" ph="select * fro... room_actual" />
+            <marker date="1503327523834" expanded="true" signature="1818:1947" ph="select ACTUA... *" />
+            <marker date="1503327523834" expanded="true" signature="1845:1915" ph="select * fro... room_actual" />
           </folding>
         </state>
       </provider>
