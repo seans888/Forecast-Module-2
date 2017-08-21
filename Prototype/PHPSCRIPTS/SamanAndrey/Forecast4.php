@@ -47,12 +47,19 @@ function insert_values($data,$y,$query,$conn,$sheet){
         $x++;
     }
 }
+function removeComma($number)
+{
+    $number = str_replace("-",",",$number);
+    return $number;
+}
 
 $result = $conn->query($sql_date);
 $x = 2;
 while($row = $result->fetch_assoc()){
-    $value = $row["date"];
-    $sheet -> setCellValueByColumnAndRow(1, $x, $value);
+    $value = removeComma($row["date"]);
+
+    //$date= date('Y-m-d',PHPExcel_Shared_Date::PHPToExcel('$value'));
+    $sheet -> setCellValueByColumnAndRow(1, $x, '=DATE('.$value.')');
     $x++;
 }
 
@@ -64,24 +71,19 @@ while($row = $result->fetch_assoc()){
     $x++;
 }
 
-function insert_forecast($x,$sheet){
-    $y = 3;
-    while($y != 6){
-        $sheet -> setCellValueByColumnAndRow($y, $x, 45);
-        $y++;
-    }
 
-}
+
+        $sheet -> setCellValueByColumnAndRow(3, $x, '=FORECAST.ETS(B26,$C$2:$C$25,$B$2:$B$25,1,1)');
+
 
 //increment $x depending on time interval
-insert_forecast($x,$sheet);
 
 
 
 // We will create xlsx file (Excel 2007 and above)
 
 $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
-
+//$writer->setPreCalculateFormulas(true);
 // Save the spreadsheet: Filename should be dynamic
 
 $writer->save('ForecastResult2017.xlsx');
