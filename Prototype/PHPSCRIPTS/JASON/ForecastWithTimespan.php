@@ -83,7 +83,43 @@ function changeDashToComma($date)
     $date = str_replace("-",",",$date);
     return $date;
 }
+function getMonthOnly($date){
+    $date = substr($date,0,3);
+    return $date;
+}
+function getYearOnly($date){
+    $date = substr($date,-2);
+    $year = (int) $date;
+    return $year;
+}
 
+//hashmap for next month
+$nextMonth =
+    [
+        "JAN" => "FEB",
+        "FEB" =>"MAR",
+        "MAR" =>"APR",
+        "APR" =>"MAY",
+        "MAY" =>"JUN",
+        "JUN" =>"JUL",
+        "JUL" =>"AUG",
+        "AUG" =>"SEPT",
+        "SEP" =>"OCT",
+        "OCT" =>"NOV",
+        "NOV" =>"DEC",
+        "DEC" =>"JAN"
+    ];
+
+//get next month based on hashmap
+$query = "select ACTUAL_ID from room_actual where seg_id='rck' order by date desc limit 1";
+$result = $conn->query($query);
+$row = $result->fetch_assoc();
+echo $lastmonth = getMonthOnly($row["ACTUAL_ID"]);
+$forecastYear = getYearOnly($row["ACTUAL_ID"]);
+$forecastMonth = $nextMonth[$lastmonth];
+if($lastmonth = "DEC"){
+   echo $forecastYear = $forecastYear+1;
+}
 
 //save new excel file
 $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
