@@ -6,20 +6,7 @@
  * Time: 11:55 PM
  */
 
-//extend PHPExcel Library
-require_once("../PHPExcel-1.8/Classes/PHPExcel.php");
-
-//Establish DB Connection
-$host="localhost";
-$user="root";
-$pass="";
-$database="rfsa";
-
-$conn = new mysqli($host,$user,$pass,$database);
-
 //array for subsegments
-$individual = array('RCK','CORP','CORPO','PKG/PRM','WSOL','WSOF','INDO','INDR');
-$group = array('CORPM','CON/ASSOC','GOV/NGO','GRPT','GRPO');
 
 //loads saved forecast from drey's method.
 $phpExcel = PHPExcel_IOFactory::load('ForecastResult2017.xlsx');
@@ -42,9 +29,7 @@ function query($query,$conn){
 for($ss=0;$ss<8;$ss++){
     $sheet = $phpExcel ->setActiveSheetIndex($ss);
 
-    $excel_arr = $sheet->toArray(null,true,true,false);
-    $id = $sheet[25][0];
-    $subsegment =  $sheet->getTitle();
+    $subsegment =  $individual[$ss];
     $date = $date = date('Y-m-d'); //today's date
 
 

@@ -126,13 +126,45 @@ $nextMonth =
 $query = "select ACTUAL_ID from room_actual where seg_id='rck' order by date desc limit 1";
 $result = $conn->query($query);
 $row = $result->fetch_assoc();
-echo $lastmonth = getMonthOnly($row["ACTUAL_ID"]);
+$lastmonth = getMonthOnly($row["ACTUAL_ID"]);
 $forecastYear = getYearOnly($row["ACTUAL_ID"]);
 $forecastMonth = $nextMonth[$lastmonth];
 if($lastmonth = "DEC"){
-   echo $forecastYear = $forecastYear+1;
+   $forecastYear = $forecastYear+1;
 }
+$forecastID = $timeSpan.'M-'.$forecastMonth.$forecastYear;
+
+//set xlsx title
+$title = 'Forecast Results '.$forecastID.'.xlsx';
 
 //save new excel file
 $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
-$writer->save('ForecastResult2017.xlsx');
+$writer->save($title);
+
+//readonly the saved file
+$phpExcel = PHPExcel_IOFactory::load($title);
+$sheet1 = $phpExcel ->setActiveSheetIndex(0);
+echo $forecastrns = $sheet1->getCell('G3')->getFormattedValue();
+
+//insert into database forecasted values
+/*for($ss=0;$ss<13;$ss++){
+    $sheet1 = $phpExcel ->setActiveSheetIndex($ss);
+    $date = $date = date('Y-m-d'); //today's date
+    $subsegment = $segments[$ss];
+    echo $forecastrns = $sheet1->getCell('G3')->getFormattedValue();
+    echo $forecastarr = $sheet1->getCell('H3')->getFormattedValue();
+    echo $forecastrev = $sheet1->getCell('I3')->getFormattedValue();
+
+
+    $query = "insert ignore into room_forecast values('$forecastID','$subsegment','$date',$forecastrns,$forecastarr,$forecastrev)";
+    if($conn -> query($query) === FALSE)
+    {
+        echo "QUERY FAILED at " . $query;
+        echo "<br/>";
+    }
+    else
+    {
+        echo $query . " SUCCESS";
+        echo nl2br("\n");
+    }
+}*/
