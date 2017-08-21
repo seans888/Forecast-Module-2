@@ -22,22 +22,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="timeSpan.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="timeSpan.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/timeSpan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="137">
               <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForecastWithTimespan.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ForecastWithTimespan.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+              <folding>
+                <element signature="e#6#95#0#PHP" expanded="true" />
+                <marker date="1503326356596" expanded="true" signature="636:755" ph="select date " />
+                <marker date="1503326356596" expanded="true" signature="1100:1225" ph="select ACTUA... *" />
+                <marker date="1503326356596" expanded="true" signature="1123:1193" ph="select * fro... room_actual" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,8 +70,8 @@
       <file leaf-file-name="form_handler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/form_handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="89" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="e#411#683#0#PHP" expanded="false" />
                 <element signature="e#700#972#0#PHP" expanded="false" />
@@ -79,8 +84,8 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="112" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -106,9 +111,9 @@
         <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/insertForecastToDB.php" />
         <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/Forecast5.php" />
         <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/timeSpan.html" />
-        <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql" />
         <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/formulaExp.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql" />
+        <option value="$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php" />
       </list>
     </option>
   </component>
@@ -220,12 +225,12 @@
       <workItem from="1503190112818" duration="3707000" />
       <workItem from="1503242842645" duration="620000" />
       <workItem from="1503243648893" duration="6426000" />
-      <workItem from="1503300325478" duration="18905000" />
+      <workItem from="1503300325478" duration="20134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29658000" />
+    <option name="totallyTimeSpent" value="30887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -554,38 +559,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JUSTIN/QueryBuilder/queryBuilderHandler1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/form_handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="89" selection-end-column="1" />
-          <folding>
-            <element signature="e#411#683#0#PHP" expanded="false" />
-            <element signature="e#700#972#0#PHP" expanded="false" />
-            <element signature="e#991#1238#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -600,9 +577,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/timeSpan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="137">
           <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8cf1f51-25d7-4a5f-8c1d-0d86cd1b987f/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/form_handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="e#411#683#0#PHP" expanded="false" />
+            <element signature="e#700#972#0#PHP" expanded="false" />
+            <element signature="e#991#1238#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPSCRIPTS/JASON/ForecastWithTimespan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
+            <marker date="1503326356596" expanded="true" signature="636:755" ph="select date " />
+            <marker date="1503326356596" expanded="true" signature="1100:1225" ph="select ACTUA... *" />
+            <marker date="1503326356596" expanded="true" signature="1123:1193" ph="select * fro... room_actual" />
+          </folding>
         </state>
       </provider>
     </entry>

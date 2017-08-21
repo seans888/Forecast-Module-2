@@ -26,8 +26,6 @@ $conn = new mysqli($host,$user,$pass,$db); //An instance of a new mysqli databas
 if( isset($_POST['selectTimeSpan']) )
 {
     $timeSpan = $_POST['selectTimeSpan'];
-}else{
-    $timeSpan = $_POST['monthNum'];
 }
 
 //insert dates on excel
@@ -36,8 +34,8 @@ $result = $conn->query($date_query);
 $x = 2;
 while($row = $result->fetch_assoc()){
     $value = changeDashToComma($row["date"]);
-    $sheet -> setCellValueByColumnAndRow(1, $x, '=DATE('.$value.')');
-    $sheet -> setCellValueByColumnAndRow(4, 2, '=EOMONTH(DATE('.$value.'),1)');
+    $sheet -> setCellValueByColumnAndRow(0, $x, '=DATE('.$value.')');
+    $sheet -> setCellValueByColumnAndRow(3, 2, '=EOMONTH(DATE('.$value.'),1)');
     $x++;
 }
 
@@ -47,14 +45,14 @@ $result = $conn->query($rns_query);
 $x = 2;
 while($row = $result->fetch_assoc()){
     $value = $row["ACTUAL_RNS"];
-    $sheet -> setCellValueByColumnAndRow(2, $x, $value);
+    $sheet -> setCellValueByColumnAndRow(1, $x, $value);
     $x++;
 }
 
 //add defined names to new excel
 $endofrange = $timeSpan+1;
-$phpExcel->addNamedRange(new PHPExcel_NamedRange('rns', $sheet, 'C2:C'.$endofrange));
-$phpExcel->addNamedRange(new PHPExcel_NamedRange('Timeline', $sheet, 'B2:B'.$endofrange));
+$phpExcel->addNamedRange(new PHPExcel_NamedRange('rns', $sheet, 'B2:B'.$endofrange));
+$phpExcel->addNamedRange(new PHPExcel_NamedRange('Timeline', $sheet, 'A2:A'.$endofrange));
 
 
 //functions
