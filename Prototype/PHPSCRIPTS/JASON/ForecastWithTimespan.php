@@ -114,11 +114,11 @@ $nextMonth =
 $query = "select ACTUAL_ID from room_actual where seg_id='rck' order by date desc limit 1";
 $result = $conn->query($query);
 $row = $result->fetch_assoc();
-$lastmonth = getMonthOnly($row["ACTUAL_ID"]);
+echo $lastmonth = getMonthOnly($row["ACTUAL_ID"]);
 $forecastYear = getYearOnly($row["ACTUAL_ID"]);
 $forecastMonth = $nextMonth[$lastmonth];
 if($lastmonth = "DEC"){
-   $forecastYear = $forecastYear+1;
+   echo $forecastYear = $forecastYear+1;
 }
 
 //save new excel file
