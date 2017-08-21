@@ -34,8 +34,19 @@
             $this->load->view('files/output',$data);
             $this->load->view('scripts/home');
             $this->load->view('templates/footer');
+        }
+        public function list_dir(){
+            $data['files']=directory_map(FCPATH.'upload/');
 
+            $this->load->view('templates/header');
+            $this->load->view('modules/menu');
+            $this->load->view('projects/menu',$data);
+            $this->load->view('scripts/home');
+            $this->load->view('templates/footer');
 
-
+        }
+        public function del_dir($name){
+            unlink(urldecode(FCPATH.'upload/'.$name));
+            redirect('projects');
         }
     }

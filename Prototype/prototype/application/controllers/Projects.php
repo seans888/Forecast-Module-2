@@ -5,6 +5,7 @@
             $data['title1']='Test Files';
             $data['files']=$this->file_model->get_files();
             $data['title2']="Insert to DB";
+            $data['files']=directory_map(FCPATH.'upload/');
 
             $this->load->view('templates/header');
             $this->load->view('modules/menu');

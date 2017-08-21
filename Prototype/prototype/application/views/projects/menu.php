@@ -39,8 +39,8 @@
                             <p><ul class="list-group">
                                 <?php foreach($files as $file):?>
                                     <li class="list-group-item">
-                                        <?php echo form_open('/files/delete/'.$file['id']);?>
-                                        <?php echo $file['file_name'];?>
+                                        <?php echo form_open('/files/del_dir/'.$file);?>
+                                        <?php echo $file;?>
                                         <input type="submit" value="Delete" class="btn btn-danger pull-right">
                                         </form>
                                     </li>
@@ -76,7 +76,7 @@
                                 <label>File to use</label>
                                 <select name="file_name" class="form-control">
                                     <?php foreach($files as $file):?>
-                                        <option value="<?php echo $file['file_name'];?>"><?php echo $file['file_name'];?></option>
+                                        <option value="<?php echo $file;?>"><?php echo $file;?></option>
                                     <?php endforeach;?>
                                 </select>
                             </div>
