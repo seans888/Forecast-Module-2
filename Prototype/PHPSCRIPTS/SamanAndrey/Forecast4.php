@@ -47,6 +47,7 @@ function insert_values($data,$y,$query,$conn,$sheet){
         $x++;
     }
 }
+
 $result = $conn->query($sql_date);
 $x = 2;
 while($row = $result->fetch_assoc()){
@@ -63,6 +64,17 @@ while($row = $result->fetch_assoc()){
     $x++;
 }
 
+function insert_forecast($x,$sheet){
+    $y = 3;
+    while($y != 6){
+        $sheet -> setCellValueByColumnAndRow($y, $x, 45);
+        $y++;
+    }
+
+}
+
+//increment $x depending on time interval
+insert_forecast($x,$sheet);
 
 
 
