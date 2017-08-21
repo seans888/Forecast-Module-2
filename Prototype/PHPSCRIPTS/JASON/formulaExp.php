@@ -11,7 +11,7 @@ $phpExcel = PHPExcel_IOFactory::load('calc.xlsx');
 $sheet=$phpExcel->getActiveSheet();
 $value = '=SUM(A1:A10)';
 
-$sheet -> setCellValueByColumnAndRow(0, 12, $value);
+$sheet -> setCellValue('B1','=date(2015,2,2)');
 
 $objWriter = PHPExcel_IOFactory::createWriter($phpExcel, 'Excel2007');
 $objWriter->save('calc1.xlsx');
