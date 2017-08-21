@@ -1,70 +1,49 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Jade_Ericson
+ * Date: 8/21/2017
+ * Time: 5:51 PM
+ */
+
+//IMPORT PHPEXCEL
+require_once("../PHPExcel-1.8/Classes/PHPExcel.php");
+
+//LOAD EXCEL TEMPLATE
+$phpExcel = PHPExcel_IOFactory::load('ForecastTemplate.xlsx');
+$sheet = $phpExcel ->setActiveSheetIndex();
+
 //Connection details
 $host="localhost";
 $user='root';
 $pass='';
 $db="rfsa";
+
 //Make a connection profile
 $conn = new mysqli($host,$user,$pass,$db); //An instance of a new mysqli database connection
 
+//check post
 if( isset($_POST['selectTimeSpan']) )
 {
     $timeSpan = $_POST['selectTimeSpan'];
 }else{
     $timeSpan = $_POST['monthNum'];
 }
-echo $timeSpan;
 
-
-//prepare the PHPExcel
-
-// Include PHPExcel library and create its object
-
-require_once("../PHPExcel-1.8/Classes/PHPExcel.php");
-
-// Load an existing spreadsheet template
-
-$phpExcel = PHPExcel_IOFactory::load('ForecastTemplate2.xlsx');
-
-function subsegment($sql_rns, $y, $sub, $sheet, $conn){
-    $result = $conn->query($sql_rns);
-    $x = 2;
-    while($row = $result->fetch_assoc()){
-        $value = $row[$sub];
-        $sheet -> setCellValueByColumnAndRow($y, $x, $value);
-        $x++;
-    }
-    $x = $x - 1;
-    $sheet -> setCellValueByColumnAndRow($y + 1, $x, $value);
-    $sheet -> setCellValueByColumnAndRow($y + 2, $x, $value);
-    $sheet -> setCellValueByColumnAndRow($y + 3, $x, $value);
-}
-
-$sql_date = "select date from(select * from room_actual where seg_id='rck' order by date desc limit $timeSpan) sub order by date asc;";
-
-$sql_value = "select ACTUAL_RNS from(select * from room_actual where seg_id='rck' order by date desc limit $timeSpan) sub order by date asc;";
-
-$sheet = $phpExcel ->setActiveSheetIndex();
-
-function insert_values($data,$y,$query,$conn,$sheet){
-    $result = $conn->query($query);
-    $x = 2;
-    while($row = $result->fetch_assoc()){
-        $value = $row[$data];
-        $sheet -> setCellValueByColumnAndRow($y, $x, $value);
-        $x++;
-    }
-}
-
-$result = $conn->query($sql_date);
+//insert dates on excel
+$date_query = "select date from(select * from room_actual where seg_id='rck' order by date desc limit $timeSpan) sub order by date asc;";
+$result = $conn->query($date_query);
 $x = 2;
 while($row = $result->fetch_assoc()){
-    $value = $row["date"];
-    $sheet -> setCellValueByColumnAndRow(1, $x, $value);
+    $value = changeDashToComma($row["date"]);
+    $sheet -> setCellValueByColumnAndRow(1, $x, '=DATE('.$value.')');
+    $sheet -> setCellValueByColumnAndRow(4, 2, '=EOMONTH(DATE('.$value.'),1)');
     $x++;
 }
 
-$result = $conn->query($sql_value);
+//insert room nights sold on excel
+$rns_query = "select ACTUAL_RNS from(select * from room_actual where seg_id='rck' order by date desc limit $timeSpan) sub order by date asc;";
+$result = $conn->query($rns_query);
 $x = 2;
 while($row = $result->fetch_assoc()){
     $value = $row["ACTUAL_RNS"];
@@ -72,24 +51,20 @@ while($row = $result->fetch_assoc()){
     $x++;
 }
 
-function insert_forecast($x,$sheet){
-    $y = 3;
-    while($y != 6){
-        $sheet -> setCellValueByColumnAndRow($y, $x, '=FORECAST.ETS(B26,$C$2:$C$25,$B$2:$B$25,1,1)');
-        $y++;
-    }
+//add defined names to new excel
+$endofrange = $timeSpan+1;
+$phpExcel->addNamedRange(new PHPExcel_NamedRange('rns', $sheet, 'C2:C'.$endofrange));
+$phpExcel->addNamedRange(new PHPExcel_NamedRange('Timeline', $sheet, 'B2:B'.$endofrange));
 
+
+//functions
+function changeDashToComma($date)
+{
+    $date = str_replace("-",",",$date);
+    return $date;
 }
 
-//increment $x depending on time interval
-insert_forecast($x,$sheet);
 
-
-
-// We will create xlsx file (Excel 2007 and above)
-
+//save new excel file
 $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
-
-// Save the spreadsheet: Filename should be dynamic
-
 $writer->save('ForecastResult2017.xlsx');
