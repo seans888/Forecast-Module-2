@@ -3,7 +3,7 @@
         public function get_forecast(){
 
             $this->forecast_model->create_forecast();
-
+            redirect('projects/index');
         }
         public function del_forecast($name){
             unlink(urldecode(FCPATH.'forecasts/'.$name));

@@ -142,9 +142,10 @@ function subsegment($sql_rns, $y, $sub, $sheet, $conn){
         $x++;
     }
     $x = $x - 1;
-    $sheet -> setCellValueByColumnAndRow($y + 1, $x, $value);
-    $sheet -> setCellValueByColumnAndRow($y + 2, $x, $value);
-    $sheet -> setCellValueByColumnAndRow($y + 3, $x, $value);
+
+    @$sheet -> setCellValueByColumnAndRow($y + 1, $x, $value);
+    @$sheet -> setCellValueByColumnAndRow($y + 2, $x, $value);
+    @$sheet -> setCellValueByColumnAndRow($y + 3, $x, $value);
 }
 
 while($segment_sheet != 14){
