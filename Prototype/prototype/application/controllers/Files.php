@@ -28,7 +28,7 @@
         public function select(){
             $data['table']=$this->file_model->select_data();
 
-            $template = array('table_open' => '<table width="100%" class="table">');
+            $template = array('table_open' => '<table width="100%" class="table table-striped table-bordered table-hover">');
             $this->table->set_template($template);
             $this->load->view('templates/header');
             $this->load->view('modules/menu');
