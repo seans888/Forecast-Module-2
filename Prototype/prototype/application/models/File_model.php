@@ -253,7 +253,7 @@
             $segmentString = setSegmentString($segmentArray,$segmentMap);
 
             $query = "select actual_id, seg_id, " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
-            echo $query;
+            //echo $query;
             return $this->db->query($query);
         }
     }
