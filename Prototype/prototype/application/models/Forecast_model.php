@@ -237,11 +237,11 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
             $title = FCPATH.'forecasts/'.'ForecastResults'.$forecastID.'.xlsx';
 
 //save new excel file
-            if (!file_exists(__DIR__."/".$title)) {
+            if (!file_exists($title)) {
                 $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
 
                 $writer->save($title);
-                @chmod($config['upload_path'],0777);
+                //@chmod($config['upload_path'],0777);
             }
 
 //readonly the saved file
