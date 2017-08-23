@@ -96,7 +96,7 @@
                             <label>Choose Data Set</label>
                             <div class="form-group">
                                 <label class="radio-inline">
-                                    <input type="radio" name="data-set" value="room_actual">Actual Data
+                                    <input type="radio" name="data-set" value="room_actual" checked>Actual Data
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name="data-set" value="room_forecast">Forecast Data
