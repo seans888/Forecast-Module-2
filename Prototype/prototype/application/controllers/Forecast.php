@@ -14,7 +14,6 @@
         }
         public function forecast_time(){
             $this->forecast_model->forecast_with_time();
-            redirect('projects/index');
         }
 
 }

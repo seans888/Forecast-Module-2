@@ -101,7 +101,7 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
         }
         public function forecast_with_time(){
             //IMPORT PHPEXCEL
-            require_once(APPPATH.'third_party/PHPExcel-1.8/Classes/PHPExcel.php');
+            require_once(APPPATH."third_party/PHPExcel-1.8/Classes/PHPExcel.php");
 
 //LOAD EXCEL TEMPLATE
             $phpExcel = PHPExcel_IOFactory::load(FCPATH.'forecasttemplate/'.'ForecastTemplate2.xlsx');
@@ -117,7 +117,16 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
             $conn = new mysqli($host,$user,$pass,$db); //An instance of a new mysqli database connection
             $num_data = $conn->query("select * from room_actual where SEG_ID='RCK'")->num_rows;
 
-            //functions
+
+//check post
+            if( isset($_POST['selectTimeSpan']) )
+            {
+                $timeSpan = $_POST['selectTimeSpan'];
+                if($timeSpan==""){
+                    $timeSpan=$num_data;
+                }
+            }
+//functions
             function changeDashToComma($date)
             {
                 $date = str_replace("-",",",$date);
@@ -131,14 +140,6 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
                 $date = substr($date,-2);
                 $year = (int) $date;
                 return $year;
-            }
-//check post
-            if( isset($_POST['selectTimeSpan']) )
-            {
-                $timeSpan = $_POST['selectTimeSpan'];
-                if($timeSpan==""){
-                    $timeSpan=$num_data;
-                }
             }
 
             $segments = array('RCK','CORP','CORPO','PKG/PRM','WSOL','WSOF','INDO','INDR','CORPM','CON/ASSOC','GOV/NGO','GRPT','GRPO');
@@ -202,7 +203,6 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
 
 
 
-
 //hashmap for next month
             $nextMonth =
                 [
@@ -233,12 +233,15 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
             $forecastID = $timeSpan.'M-'.$forecastMonth.$forecastYear;
 
 //set xlsx title
+            $config['upload_path']=FCPATH.'forecasts/';
             $title = FCPATH.'forecasts/'.'ForecastResults'.$forecastID.'.xlsx';
 
 //save new excel file
-            if (!file_exists(FCPATH.'forecasts/'.$title)) {
+            if (!file_exists(__DIR__."/".$title)) {
                 $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
+
                 $writer->save($title);
+                @chmod($config['upload_path'],0777);
             }
 
 //readonly the saved file
@@ -246,25 +249,22 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
 //insert into database forecasted values
             $ctr = 0;
 
-            while ($ctr != 13){
+            while ($ctr != 13) {
                 //set the designate sheets to go to
-                $sheet1 = $phpExcel ->setActiveSheetIndex($ctr);
+                $sheet1 = $phpExcel->setActiveSheetIndex($ctr);
                 $date = $date = date('Y-m-d'); //today's date
                 $subsegment = $segments[$ctr];
                 echo "<pre>";
-                echo $forecastrns = $sheet1->getCell('G2')->getOldCalculatedValue()."  ";
-                echo $forecastarr = $sheet1->getCell('H2')->getOldCalculatedValue()."  ";
-                echo $forecastrev = $sheet1->getCell('I2')->getOldCalculatedValue()."  ";
+                echo $forecastrns = $sheet1->getCell('G2')->getOldCalculatedValue() . "  ";
+                echo $forecastarr = $sheet1->getCell('H2')->getOldCalculatedValue() . "  ";
+                echo $forecastrev = $sheet1->getCell('I2')->getOldCalculatedValue() . "  ";
                 echo "<br/></pre>";
 
                 $query = "insert ignore into room_forecast values('$forecastID','$subsegment','$date',$forecastrns,$forecastarr,$forecastrev)";
-                if($conn -> query($query) === FALSE)
-                {
+                if ($conn->query($query) === FALSE) {
                     echo "QUERY FAILED at " . $query;
                     echo "<br/>";
-                }
-                else
-                {
+                } else {
                     echo $query . " SUCCESS";
                     echo nl2br("\n");
                 }
