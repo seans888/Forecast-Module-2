@@ -89,6 +89,34 @@
                         </div>
 
                         <!-- FROM HERE JASON -->
+                        <script>
+                            function disableForecast(){
+                                if(document.getElementById('RadioActual').checked) {
+                                    document.getElementById('actual1').removeAttribute('disabled');
+                                    document.getElementById('actual2').removeAttribute('disabled');
+                                    document.getElementById('actual3').removeAttribute('disabled');
+                                    document.getElementById('budget1').removeAttribute('disabled');
+                                    document.getElementById('budget2').removeAttribute('disabled');
+                                    document.getElementById('budget3').removeAttribute('disabled');
+                                    document.getElementById('forecast1').disabled=true;
+                                    document.getElementById('forecast2').disabled=true;
+                                    document.getElementById('forecast3').disabled=true;
+                                }
+                            }function disableActualAndBudget(){
+                                if(document.getElementById('RadioForecast').checked) {
+                                    document.getElementById('forecast1').removeAttribute('disabled');
+                                    document.getElementById('forecast2').removeAttribute('disabled');
+                                    document.getElementById('forecast3').removeAttribute('disabled');
+                                    document.getElementById('actual1').disabled=true;
+                                    document.getElementById('actual2').disabled=true;
+                                    document.getElementById('actual3').disabled=true;
+                                    document.getElementById('budget1').disabled=true;
+                                    document.getElementById('budget2').disabled=true;
+                                    document.getElementById('budget3').disabled=true;
+                                }
+                            }
+                        </script>>
+
                         <div class="tab-pane fade" id="builder">
                             <h4>Query Builder</h4>
                         <p>
@@ -96,44 +124,44 @@
                             <label>Choose Data Set</label>
                             <div class="form-group">
                                 <label class="radio-inline">
-                                    <input type="radio" name="data-set" value="room_actual" checked>Actual Data
+                                    <input id="RadioActual" type="radio" name="data-set" value="room_actual" checked onchange="disableForecast()">Actual Data
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="data-set" value="room_forecast">Forecast Data
+                                    <input id="RadioForecast" type="radio" name="data-set" value="room_forecast" onchange="disableActualAndBudget()">Forecast Data
                                 </label>
                             </div>
                             <label>Select Desired Data</label>
                             <div class="form-group">
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="1">Budget - Room Nights Sold
+                                    <input id="budget1" type="checkbox" name="data-desired[]" value="1">Budget - Room Nights Sold
                                 </label>
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="2">Budget - Average Room Rate
+                                    <input id="budget2" type="checkbox" name="data-desired[]" value="2">Budget - Average Room Rate
                                 </label>
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="3">Budget - Revenue
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="4">Actual - Room Nights Sold
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="5">Actual - Average Room Rate
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="6">Actual - Revenue
+                                    <input id="budget3" type="checkbox" name="data-desired[]" value="3">Budget - Revenue
                                 </label>
                             </div>
                             <div class="form-group">
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="7">Forecast - Room Nights Sold
+                                    <input id="actual1" type="checkbox" name="data-desired[]" value="4">Actual - Room Nights Sold
                                 </label>
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="8">Forecast - Average Room Rate
+                                    <input id="actual2" type="checkbox" name="data-desired[]" value="5">Actual - Average Room Rate
                                 </label>
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" name="data-desired[]" value="9">Forecast - Revenue
+                                    <input id="actual3" type="checkbox" name="data-desired[]" value="6">Actual - Revenue
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline">
+                                    <input id="forecast1" type="checkbox" name="data-desired[]" value="7" disabled>Forecast - Room Nights Sold
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input id="forecast2" type="checkbox" name="data-desired[]" value="8" disabled>Forecast - Average Room Rate
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input id="forecast3" type="checkbox" name="data-desired[]" value="9" disabled>Forecast - Revenue
                                 </label>
                             </div>
                             <div class="form-group">

@@ -249,6 +249,11 @@ $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
 //insert into database forecasted values
             $ctr = 0;
 
+            $query = "delete from room_forecast where forecast_id='$forecastID'";
+            if($conn->query("select * from room_forecast where FORECAST_ID='$forecastID'")){
+                $conn->query($query);
+            }
+
             while ($ctr != 13) {
                 //set the designate sheets to go to
                 $sheet1 = $phpExcel->setActiveSheetIndex($ctr);
