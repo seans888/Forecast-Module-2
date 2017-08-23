@@ -142,7 +142,7 @@ $forecastID = $timeSpan.'M-'.$forecastMonth.$forecastYear;
 $title = 'Forecast Results '.$forecastID.'.xlsx';
 
 //save new excel file
-if (!file_exists('C:/Users/Jade Ericson/Documents/GitHub/Forecast-Module-2/Prototype/PHPSCRIPTS/JASON/'.$title)) {
+if (!file_exists(__DIR__."/".$title)) {
     $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
     $writer->save($title);
 }
