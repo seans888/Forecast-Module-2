@@ -21,13 +21,17 @@ $db="rfsa";
 
 //Make a connection profile
 $conn = new mysqli($host,$user,$pass,$db); //An instance of a new mysqli database connection
+$num_data = $conn->query("select * from room_actual where SEG_ID='RCK'")->num_rows;
+
 
 //check post
 if( isset($_POST['selectTimeSpan']) )
 {
     $timeSpan = $_POST['selectTimeSpan'];
+    if($timeSpan==""){
+        $timeSpan=$num_data;
+    }
 }
-
 
 $segments = array('RCK','CORP','CORPO','PKG/PRM','WSOL','WSOF','INDO','INDR','CORPM','CON/ASSOC','GOV/NGO','GRPT','GRPO');
 
@@ -129,7 +133,7 @@ $row = $result->fetch_assoc();
 $lastmonth = getMonthOnly($row["ACTUAL_ID"]);
 $forecastYear = getYearOnly($row["ACTUAL_ID"]);
 $forecastMonth = $nextMonth[$lastmonth];
-if($lastmonth = "DEC"){
+if($lastmonth == "DEC"){
    $forecastYear = $forecastYear+1;
 }
 $forecastID = $timeSpan.'M-'.$forecastMonth.$forecastYear;
@@ -138,12 +142,13 @@ $forecastID = $timeSpan.'M-'.$forecastMonth.$forecastYear;
 $title = 'Forecast Results '.$forecastID.'.xlsx';
 
 //save new excel file
-$writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
-$writer->save($title);
+if (!file_exists('C:/Users/Jade Ericson/Documents/GitHub/Forecast-Module-2/Prototype/PHPSCRIPTS/JASON/'.$title)) {
+    $writer = PHPExcel_IOFactory::createWriter($phpExcel, "Excel2007");
+    $writer->save($title);
+}
 
 //readonly the saved file
 $phpExcel = PHPExcel_IOFactory::load($title);
-
 //insert into database forecasted values
 $ctr = 0;
 
@@ -152,12 +157,13 @@ while ($ctr != 13){
     $sheet1 = $phpExcel ->setActiveSheetIndex($ctr);
     $date = $date = date('Y-m-d'); //today's date
     $subsegment = $segments[$ctr];
-    echo $forecastrns = $sheet1->getCell('G2')->getFormattedValue();
-    echo $forecastarr = $sheet1->getCell('H2')->getFormattedValue();
-    echo $forecastrev = $sheet1->getCell('I2')->getFormattedValue();
+    echo "<pre>";
+    echo $forecastrns = $sheet1->getCell('G2')->getOldCalculatedValue()."  ";
+    echo $forecastarr = $sheet1->getCell('H2')->getOldCalculatedValue()."  ";
+    echo $forecastrev = $sheet1->getCell('I2')->getOldCalculatedValue()."  ";
+    echo "<br/></pre>";
 
-    $ctr++;
-    /*$query = "insert ignore into room_forecast values('$forecastID','$subsegment','$date',$forecastrns,$forecastarr,$forecastrev)";
+    $query = "insert ignore into room_forecast values('$forecastID','$subsegment','$date',$forecastrns,$forecastarr,$forecastrev)";
     if($conn -> query($query) === FALSE)
     {
         echo "QUERY FAILED at " . $query;
@@ -167,5 +173,7 @@ while ($ctr != 13){
     {
         echo $query . " SUCCESS";
         echo nl2br("\n");
-    }*/
+    }
+    echo "<br/></pre>";
+    $ctr++;
 }
