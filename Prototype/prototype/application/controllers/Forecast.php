@@ -12,4 +12,9 @@
         public function download($name){
             force_download(FCPATH.'/forecasts/'.$name,NULL);
         }
+        public function forecast_time(){
+            $this->forecast_model->forecast_with_time();
+            redirect('projects/index');
+        }
+
 }

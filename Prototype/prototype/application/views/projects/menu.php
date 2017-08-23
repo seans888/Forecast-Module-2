@@ -1,7 +1,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header"><?=$title0?></h1>
+            <h1 class="page-header">Test Project</h1>
         </div>
 
 
@@ -257,11 +257,47 @@
                         </p>
                         </div>
                         <div class="tab-pane fade" id="forecast">
-                            <h4>Forecast</h4>
-
+                            <h4>Static Forecast</h4>
+                            <div class="form-group">
                                 <?php echo form_open('forecast/get_forecast');?>
-                                <input type="submit" value="Forecast" class="btn btn-success">
+                                <input type="submit" value='Forecast from 2015-2016 "Static Version"' class="btn btn-success">
                                 </form>
+                            </div>
+                            <hr>
+                            <script language="JavaScript">
+                                function myFunction(){
+                                    if(document.getElementById('sel').selected==true) {
+                                        document.getElementById('in').removeAttribute('disabled');
+                                        document.getElementById('in').value = 3;
+                                    }
+                                    else{
+                                        document.getElementById('in').disabled=true;
+                                        document.getElementById('in').value = null;
+                                    }
+                                }
+                                function setSelValue(){
+                                    document.getElementById('sel').value = document.getElementById('in').value;
+                                }
+                            </script>
+                            <h4>Forecasting with Timespan</h4>
+                            <h5>Select Timespan</h5>
+                            <div class="form-group">
+                                <?php echo form_open('forecast/forecast_time');?>
+                                <select class="form-control" id="selectid" name="selectTimeSpan" onchange="myFunction()">
+                                    <option value=""> All Past Data</option>
+                                    <option value="12">Past Year</option>
+                                    <option value="6">Past 6 Months</option>
+                                    <option  value="3">Past 3 Months</option>
+                                    <option id="sel">Indicate Timespan</option>
+                                </select>
+                                <br>
+                                <div class="form-group">
+                                    <input class="form-control" disabled id="in" type="number" name="monthNum" min="3" max="24">
+                                </div>
+                                <input class="btn btn-success" type="submit" value="Forecast with Timespan" onclick="setSelValue()"/>
+                                </form>
+                            </div>
+
                             <ul class="list-group">
 
                                 <?php foreach($forecasts as $forecast):?>
@@ -275,19 +311,4 @@
                             </ul>
 
                         </div>
-                    </div>
-                </div>
-                <!-- /.panel-body -->
-            <!--Flash messages-->
-            <?php if($this->session->flashdata('file_upload')):?>
-                <?php echo '<div class="alert alert-success">'.$this->session->flashdata('file_upload').'</div>';?>
-            <?php endif;?>
-            <?php if($this->session->flashdata('file_no_upload')):?>
-                <?php echo '<div class="alert alert-danger">'.$this->session->flashdata('file_no_upload').'</div>';?>
-            <?php endif;?>
-            <!-- /.panel -->
-        </div>
 
-
-    </div>
-</div>
