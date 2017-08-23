@@ -19,7 +19,7 @@
                                         <input name="remember" type="checkbox" value="Remember Me">Remember Me</label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="<?php echo base_url();?>home" class="btn btn-lg btn-primary btn-block">Login</a>
+                                <a href="<?php echo base_url();?>projects/index" class="btn btn-lg btn-primary btn-block">Login</a>
                             </fieldset>
                         </form>
                     </div>

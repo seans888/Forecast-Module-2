@@ -7,15 +7,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo base_url();?>home">RFSA</a>
+        <a class="navbar-brand" href="<?php echo base_url();?>projects/index">RFSA</a>
     </div>
 
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
-                <li>
-                    <a href="<?php echo base_url(); ?>home"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
-                </li>
                 <li>
                     <a href="#"><i class="fa fa-plus-square fa-fw"></i>Create a project</a>
                 </li>
