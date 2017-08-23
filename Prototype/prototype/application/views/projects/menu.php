@@ -87,6 +87,8 @@
                             </form>
                             </p>
                         </div>
+
+                        <!-- FROM HERE JASON -->
                         <div class="tab-pane fade" id="builder">
                             <h4>Query Builder</h4>
                         <p>
