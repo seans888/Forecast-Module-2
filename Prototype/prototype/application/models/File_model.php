@@ -205,7 +205,10 @@
                     "3" => "budget_revenue",
                     "4" => "actual_rns",
                     "5" => "actual_arr",
-                    "6" => "actual_revenue"
+                    "6" => "actual_revenue",
+                    "7" => "forecast_rns",
+                    "8" => "forecast_arr",
+                    "9" => "forecast_revenue"
                 ];
             $dayMap = [
                 "JAN" => "31",
@@ -252,7 +255,14 @@
             $dataString = setDataString($desiredDataArray,$desiredDataMap);
             $segmentString = setSegmentString($segmentArray,$segmentMap);
 
-            $query = "select actual_id, seg_id, " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
+            if($table == "room_actual")
+            {
+                $query = "select actual_id, seg_id, " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
+            }
+            elseif ($table == "room_forecast")
+            {
+                $query = "select forecast_id, seg_id, " . $dataString . " from " . $table . " where " . $segmentString . " and date between " . "'$startDate'" . " and " . "'$endDate'";
+            }
             //echo $query;
             return $this->db->query($query);
         }

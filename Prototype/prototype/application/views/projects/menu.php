@@ -124,6 +124,17 @@
                                 </label>
                             </div>
                             <div class="form-group">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="7">Forecast - Room Nights Sold
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="8">Forecast - Average Room Rate
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="data-desired[]" value="9">Forecast - Revenue
+                                </label>
+                            </div>
+                            <div class="form-group">
                                 <label>Select Individual Room Segments</label>
                                 <script language="JavaScript">
                                     function toggle(source) {
