@@ -115,7 +115,7 @@
                                     document.getElementById('budget3').disabled=true;
                                 }
                             }
-                        </script>>
+                        </script>
 
                         <div class="tab-pane fade" id="builder">
                             <h4>Query Builder</h4>
